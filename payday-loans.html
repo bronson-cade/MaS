@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Payday Loans</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math and Society">
+<meta property="book:author" content="Susan Addington">
+<meta property="book:author" content="Bronson Lim">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-r' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-r",
+  "linked": true,
+  "linkKey": "linked-r",
+  "autoeval": false,
+  "languages": [
+    "r"
+  ],
+  "evalButtonText": "Evaluate (R)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_focused_light.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#payday-loans-objectives-2-1 { counter-set: payday-loans-objectives-2-1 0; }
+#payday-loans-objectives-2-1 > li::marker { content: ""counter(payday-loans-objectives-2-1,decimal)"."; }
+#payday-loans-objectives-2-1 > li { counter-increment: payday-loans-objectives-2-1; }
+#payday-loans-correlation-4-4-1 { counter-set: payday-loans-correlation-4-4-1 0; }
+#payday-loans-correlation-4-4-1 > li::marker { content: ""counter(payday-loans-correlation-4-4-1,decimal)"."; }
+#payday-loans-correlation-4-4-1 > li { counter-increment: payday-loans-correlation-4-4-1; }
+#payday-loans-references-3-2 { counter-set: payday-loans-references-3-2 0; }
+#payday-loans-references-3-2 > li::marker { content: ""counter(payday-loans-references-3-2,decimal)"."; }
+#payday-loans-references-3-2 > li { counter-increment: payday-loans-references-3-2; }
+</style>
+</head>
+<body id="mathAndSociety" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="mathAndSociety.html"><span class="title">Math and Society</span></a></h1>
+<p class="byline">Susan Addington, Bronson Lim</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-section-name.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch1-financialMathematics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch1-financialMathematics.html" class="internal"><span class="codenumber">1</span> <span class="title">Financial Mathematics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Section Title</span></a></div></li>
+<li class="toc-item toc-chapter active">
+<div class="toc-title-box"><a href="payday-loans.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Payday Loans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-objectives" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-background" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Understanding the Issue</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-background-interest-and-risk" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Interest and Risk</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-types-of-loans" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Types of Loans and Lenders</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-types-of-loans-payday" class="internal"><span class="title">Payday Loans</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-types-of-loans-bank" class="internal"><span class="title">Bank Loans</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-types-of-loans-government" class="internal"><span class="title">Government Loans</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-types-of-loans-pawn" class="internal"><span class="title">Pawn</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-background-discriminatory-lending" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Discriminatory Lending</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-cui-bono" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Cui Bono - Who Benefits?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-big-problem" class="internal"><span class="codenumber">1.2.4</span> <span class="title">The Big Problem: Predatory Lending</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-interest" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-simple-interest" class="internal"><span class="codenumber">1.2.5.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-compound-interest" class="internal"><span class="codenumber">1.2.5.2</span> <span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-apr" class="internal"><span class="codenumber">1.2.5.3</span> <span class="title">Finding the Interest Rate</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-risk" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Risk and Credit Scores</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-probability" class="internal"><span class="codenumber">1.2.6.1</span> <span class="title">Introduction to Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-expected-value" class="internal"><span class="codenumber">1.2.6.2</span> <span class="title">Expected Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-lending-decisions" class="internal"><span class="codenumber">1.2.6.3</span> <span class="title">How Banks Make Lending Decisions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-correlation" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Correlation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-correlation-definition" class="internal"><span class="codenumber">1.2.7.1</span> <span class="title">Defining the Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-correlation-4" class="internal"><span class="codenumber">1.2.7.2</span> <span class="title">Computing Correlation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-correlation-5" class="internal"><span class="codenumber">1.2.7.3</span> <span class="title">Using Correlation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-change" class="internal"><span class="codenumber">1.2.8</span> <span class="title">Solving for Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-change-3" class="internal"><span class="codenumber">1.2.8.1</span> <span class="title">If people are willing to pay...</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-change-4" class="internal"><span class="codenumber">1.2.8.2</span> <span class="title">We have to charge those rates, because of the risk!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-change-5" class="internal"><span class="codenumber">1.2.8.3</span> <span class="title">If we don’t lend to them, who will?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-solving-for-change-6" class="internal"><span class="codenumber">1.2.8.4</span> <span class="title">What Can We Do?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="payday-loans.html#payday-loan-reflection" class="internal"><span class="codenumber">1.2.9</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-exercises" class="internal"><span class="codenumber">1.2.10</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="payday-loans.html#payday-loans-references" class="internal"><span class="codenumber">1.2.11</span> <span class="title">References</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-references-2" class="internal"><span class="codenumber">1.2.11.1</span> <span class="title">Bibliography</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="payday-loans.html#payday-loans-references-3" class="internal"><span class="codenumber">1.2.11.2</span> <span class="title">Image Descriptions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="payday-loans"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Payday Loans</span>
+</h2>
+<section class="introduction" id="payday-loans-introduction"><div class="para" id="payday-loans-introduction-1"><em class="emphasis">This module on Payday Loans was written by <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "mbranson" missing or not unique]</code>.</em></div> <div class="para" id="payday-loans-introduction-2">Almost everyone borrows money at some point in their life. When you borrow money from a bank or another financial organization, they charge <em class="emphasis">interest</em>.</div> <div class="para" id="payday-loans-introduction-3">How do banks decide how much it should cost to borrow money? Do they do this fairly? While everyone uses credit - whether for mortgages, student loans, credit cards, or in other forms - the poor often have less access to credit.  When organizations charge people unfairly high interest rates, the practice is called <em class="emphasis">predatory lending</em>.</div> <div class="para" id="payday-loans-introduction-4">Who you are, where you live, and what you do affects your ability to borrow money. In this module, we’ll explore <em class="emphasis">payday loans</em>, a common (and expensive) way of borrowing money for people without other options.</div></section><section class="section" id="payday-loans-objectives"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Objectives</span>
+</h3>
+<div class="para logical" id="payday-loans-objectives-2">
+<div class="para">By the end of this module, students will be able to:</div>
+<ol class="decimal" id="payday-loans-objectives-2-1">
+<li id="payday-loans-objectives-2-1-1"><div class="para" id="p-derived-payday-loans-objectives-2-1-1">Calculate the financial cost of a payday loan.</div></li>
+<li id="payday-loans-objectives-2-1-2"><div class="para" id="p-derived-payday-loans-objectives-2-1-2">Measure the geographical correlation between payday lenders and minority populations.</div></li>
+<li id="payday-loans-objectives-2-1-3"><div class="para" id="p-derived-payday-loans-objectives-2-1-3">Define the concept of risk.</div></li>
+<li id="payday-loans-objectives-2-1-4"><div class="para" id="p-derived-payday-loans-objectives-2-1-4">Outline the social implications of payday lending on individuals and communities.</div></li>
+<li id="payday-loans-objectives-2-1-5"><div class="para" id="p-derived-payday-loans-objectives-2-1-5">Evaluate potential alternatives to payday lending through a mathematical lens.</div></li>
+</ol>
+</div></section><section class="section" id="payday-loans-background"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Understanding the Issue</span>
+</h3>
+<section class="subsection" id="payday-loans-background-interest-and-risk"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2.1</span><span class="space"> </span><span class="title">Interest and Risk</span>
+</h4>
+<article class="definition definition-like" id="predatory-lending-interest"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Interest.</span>
+</h5> <div class="para" id="predatory-lending-interest-2">An amount of money, usually a percentage of the amount owed, which is added on to a debt which has not been paid.  Usually interest is added on once a month or once a year. The percentage is called the <em class="emphasis">interest rate</em>.</div></article><div class="para" id="payday-loans-background-interest-and-risk-3">Banks charge different interest rates in different situations.  For example, if you already have a lot of money borrowed from other banks, a bank may charge you a higher interest rate.  They do this because they are less confident that you will be able to pay the loaned money back, an idea called <em class="emphasis">risk</em>.</div>
+<article class="definition definition-like" id="predatory-lending-risk"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Risk.</span>
+</h5> <div class="para" id="predatory-lending-risk-2">The probability that the amount of money a bank makes on a loan or other investment is less than the amount of money that they loaned out.</div></article><div class="para" id="payday-loans-background-interest-and-risk-5">The risk of a loan is determined using a number of factors - the two most important are the borrower’s <em class="emphasis">credit score</em> and whether the loan is <em class="emphasis">secured</em> or not.</div>
+<article class="definition definition-like" id="payday-loans-background-interest-and-risk-6"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Credit Score.</span>
+</h5> <div class="para" id="payday-loans-background-interest-and-risk-6-2">A credit score is a number, used in the United States and a number of other countries, which assigns a number (between 300 and 850) to a person’s credit risk.  Higher numbers indicate lower risk.</div></article><figure class="figure figure-like" id="payday-loans-background-interest-and-risk-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/credit-score.jpeg" class="contained" alt="A bar with credit scores ranging from Very Bad to Excellent. Image Description available."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.4<span class="period">.</span></span><span class="space"> </span>"FICO Credit Score Range" by cafecredit is licensed with <a class="external" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-background-interest-and-risk-7-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-background-interest-and-risk-7-2-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/2.0/</code></div></details>. <a href="payday-loans.html#image-description-credit-score" class="xref" data-knowl="./knowl/xref/image-description-credit-score.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1">Image Description 1</a>.</figcaption></figure><div class="para" id="payday-loans-background-interest-and-risk-8">Credit scores are determined by mathematical algorithms, and are based on many different factors.  We’ll look at how they’re determined in <a href="payday-loans.html#payday-loans-risk" class="internal" title="Section 1.2.6: Risk and Credit Scores">Section 1.2.6</a>.  The general principle of credit scores is that you are more likely to repay a loan if you have repaid other loans in the past.  While this may seem like a reasonable system at face-value, it can create huge problems for people who haven’t had access to loans in the past.</div>
+<div class="para" id="payday-loans-background-interest-and-risk-9">The other main factor that affects risk is whether the loan is <em class="emphasis">secured</em>.  When you secure a loan, that means that you offer up something of value to guarantee that you will pay back the loan.  If you fail to pay back the loan, the lender can <em class="emphasis">reposess</em> whatever you offered up.  Large purchases - like cars or homes - are generally made on secured loans.  If you fail to pay back the loan, the lending agency will take back the car or home which you borrowed the money for.</div></section><section class="subsection" id="payday-loans-types-of-loans"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2.2</span><span class="space"> </span><span class="title">Types of Loans and Lenders</span>
+</h4>
+<section class="introduction" id="payday-loans-types-of-loans-2"><div class="para" id="payday-loans-types-of-loans-2-1">This module is primarily concerned with understanding how payday loans work.  On the surface, payday loans may seem like a pretty good deal - but when carefully compared with other types of loans, we’ll see that they can actually end up costing the borrower a lot of money.  We’ll look at how they compare to other types of loans that are available to people with better credit scores</div></section><section class="subsubsection" id="payday-loans-types-of-loans-payday"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Payday Loans</span>
+</h5>
+<figure class="figure figure-like" id="payday-loans-types-of-loans-payday-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/payday-loan-window.jpeg" class="contained" alt="Window of a payday lender advertising loans of $50 to $500 with no credit check."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span>"Payday Loan Place Window Graphics" by taberandrew is licensed with <a class="external" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-types-of-loans-payday-2-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-types-of-loans-payday-2-2-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/2.0/</code></div></details>.</figcaption></figure><div class="para" id="payday-loans-types-of-loans-payday-3">Payday loans are a type of loan often called a "loan of last resort." Anyone can take out a payday loan - the lender does not check their credit score to determine risk.  Therefore, the lender must assume that everyone taking out a payday loan is high risk - even though that may not be true.  Payday loans are generally made for a short term, usually two weeks (the name comes from taking a loan until the next payday, when it can be paid back). At the end of the two weeks, the borrower must pay back the amount they borrowed plus a fee.  Payday loans are usually for small amounts - up to $1000 - and charge a fee of $10-$30 for each $100 borrowed [<a href="payday-loans.html#biblio-payday-loan-cfpb" class="xref" data-knowl="./knowl/xref/biblio-payday-loan-cfpb.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.2: Consumer Financial Protection Bureau: What is a Payday Loan">[1.2.11.1.2]</a>].  So you might borrow $200 and pay it back two weeks later, plus a $30 fee.  While this may not seem like much, this is equivalent to an annual interest rate of 360% - almost 20 times what a credit card might charge!  In <a href="payday-loans.html#payday-loans-interest" class="internal" title="Section 1.2.5: Simple and Compound Interest">Section 1.2.5</a> we’ll see how to compute how much interest a payday loan is charging.</div>
+<figure class="figure figure-like" id="payday-loans-types-of-loans-payday-4"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/3rOVmUnUM7A?&amp;modestbranding=1&amp;rel=0" id="payday-loans-types-of-loans-payday-4-1"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.6<span class="period">.</span></span><span class="space"> </span>A short explanation of how payday lending works from the Pew Charitable Trust.</figcaption></figure></section><section class="subsubsection" id="payday-loans-types-of-loans-bank"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Bank Loans</span>
+</h5>
+<div class="para" id="payday-loans-types-of-loans-bank-2">Traditional bank loans are very different than a payday loan.  The interest rate is determined by risk (credit score), the type of loan, and what kind of security the borrower can offer for the loan.  Bank loans will have much lower interest rates than payday loans, but are not available to everyone.  Many people get their first loan - when they don’t have a credit history - by having someone else <em class="emphasis">cosign</em> it.  A cosigner is someone, usually a parent or other relative, who agrees to pay back the loan if the borrower cannot.  Student loans are an example of a type of loan that often has a cosigner - if the borrower is a student, they may not have the credit history or security to borrow on their own.</div>
+<div class="para" id="payday-loans-types-of-loans-bank-3">One popular type of bank loan, used by many consumers, is the credit card.  A credit card is effectively an agreement between the bank and the cardholder to loan any amount of money on a short-term basis, up to a certain amount - called the <em class="emphasis">credit limit</em>.  The cardholder agrees to pay back at least the interest on the loan each month, or pay a penalty.  If the cardholder doesn’t make their minimum payment each month, in addition to the penalty fees, the bank can cancel the credit card.  Falling behind on paying a credit card can quickly add up - both in fees and in damage to your credit rating.  If you have a high credit score, banks will usually agree to give you a credit card with a low interest rate.  If your credit score isn’t as good, though, they will either deny you a card entirely, offer you one with a high interest rate, or require you to secure the card (pay a deposit to cover any missed payments).</div>
+<div class="para" id="payday-loans-types-of-loans-bank-4">Many people take out bank loans to make major purchases, like homes or cars.  A <em class="emphasis">mortgage</em> is a bank loan which uses a home or piece of property as a security.  Many people use a mortgage to borrow money to buy a home.  If they fail to repay the loan, the bank gets to take the security - in this case, their home.  When the bank takes the security from the loan, it is called a <em class="emphasis">foreclosure</em> (usually used with homes and property) or a <em class="emphasis">reposession</em> (usually used with vehicles like cars or boats).  The result is the same - the bank takes the property which was used to secure the loan.  They are then able to sell that property to earn back the money that they loaned out.  Interest rates for these types of loans tend to be much lower, because the opportunity to foreclose on the property gives the bank a way to earn their money back even if the borrower does not repay the loan.</div></section><section class="subsubsection" id="payday-loans-types-of-loans-government"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Government Loans</span>
+</h5>
+<div class="para" id="payday-loans-types-of-loans-government-2">The government - both state and federal governments in the US - is also an important provider of loans.  These loans are either provided directly by the government or secured by the government (a private bank makes the loan, and the government provides the security for the borrower). In some cases - like subsidized student loans - the government may even pay part of the interest.  Government loans provide access to money for people in need, but the process for getting one can be complicated and take time.  In addition, many government loans are restricted to particular groups, like veterans, small businesses, or first-time college students.</div>
+<div class="para" id="payday-loans-types-of-loans-government-3">Some government loans can be <em class="emphasis">forgiven</em>, meaning that the government does not require the loan to be paid back in exchange for some form of service from the borrower.  For example, government student loans can be forgiven after ten years of work in public service, as long as certain requirements are met.</div></section><section class="subsubsection" id="payday-loans-types-of-loans-pawn"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Pawn</span>
+</h5>
+<div class="para" id="payday-loans-types-of-loans-pawn-2">A pawn is a short-term secured loan, usually made to someone with a low or no credit score.  In a pawn, the borrower brings a valuable object (usually something small, like jewelry or electronics) to a pawn shop.  The pawnbroker pays them some percentage of the value of the item, generally less than half.  The borrower must then repay the amount, plus interest.  If the borrower doesn’t pay the money back, the pawnbroker can sell their item to recoup their investment.</div>
+<div class="para" id="payday-loans-types-of-loans-pawn-3">Pawns generally offer more favorable interest rates than payday loans, since the loan is secured.  However, the borrower loses the ability to use whatever they have pawned while the money is borrowed.  For something like jewelry, that can mean living with the anxiety of losing a valuable or sentimental item.  For something like electronics, it could impact their ability to communicate or work.</div></section></section><section class="subsection" id="payday-loans-background-discriminatory-lending"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2.3</span><span class="space"> </span><span class="title">Discriminatory Lending</span>
+</h4>
+<div class="para logical" id="payday-loans-background-discriminatory-lending-2">
+<div class="para">The Equal Credit Opportunity Act (ECOA) is a federal law in the United States which prohibits discrimination in the loaning of money and other credit transactions <a href="payday-loans.html#biblio-fair-lending" class="xref" data-knowl="./knowl/xref/biblio-fair-lending.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.1: FDIC Consumer Compliance Examination Manual">[1.2.11.1.1]</a>.  The ECOA prohibits discrimination on the basis of</div>
+<ul class="disc" id="payday-loans-background-discriminatory-lending-2-2">
+<li id="payday-loans-background-discriminatory-lending-2-2-1"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-1">Race or color;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-2"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-2">Religion;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-3"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-3">National origin;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-4"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-4">Sex;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-5"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-5">Marital Status;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-6"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-6">Age;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-7"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-7">Source of income;</div></li>
+<li id="payday-loans-background-discriminatory-lending-2-2-8"><div class="para" id="p-derived-payday-loans-background-discriminatory-lending-2-2-8">Excercise of consumer credit rights.</div></li>
+</ul>
+</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-3">So if the ECOA exists, banks are unable to discriminate against different types of people, right? Unfortunately, no. While the ECOA makes it illegal to discriminate in mortgage lending, enforcement of the law is very challenging.  It is very difficult to prove, in a situation where so many different factors are involved, that race or national origin influenced the lenders decision.  Many lenders use complex computer algorithms to decide whether to lend to a particular borrower.  Frequently, these algorithms are <em class="emphasis">trained</em> in a process called <em class="emphasis">machine learning</em>, where the computer studies data from past loans.  The computer finds patterns in the data, and uses those patterns to make decision about whether to lend and what terms to offer.  Because that data is based on past lending decisions made by human beings, it can (and does) contain biased decisions made by those human beings.  Research has shown that these algorithms replicate the patterns of racial and ethnic discrimination that were made in the data they are trained on.<a href="payday-loans.html#biblio-mortgage-discrimination" class="xref" data-knowl="./knowl/xref/biblio-mortgage-discrimination.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.5: Disparity in home lending costs minorities millions, researchers find.">[1.2.11.1.5]</a>  Therefore, although overt discrimination is forbidden in lending, it still occurs.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-4">In addition to the discrimination that occurs through implicit bias (both in humans and in algorithms), the ECOA, and other similar laws in different countries, still allow banks and other lenders to discriminate on the basis of risk.  Banks can choose whether or not they want to lend someone money based on how likely that person is to pay it back.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-5">We’ve talked about how banks, the government, and other entities make decisions about who they will loan money to.  Those decisions are made primarily on the basis of two things: credit history and access to security.  If someone has a strong credit history - they have borrowed money and paid it back on time - or if they have access to property or someone with credit history to secure their loan - then they can obtain favorable terms for a loan.  If they do not have either of those things, then they are left to borrow money from lenders who demand much higher interest payments.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-6">This brings us to the question, then, of which groups of people have access to those things.  Although the ECOA banned discrimination in the loaning of money in 1974, access to credit tends to be passed down through generations.  If your grandparents did not have access to credit, they may not have been able to support your parents when they needed to borrow money for education or a first home - in which case, your parents would be unable to offer the same opportunities to you.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-7">Thus, the question of who has access to affordable credit can become a question of who has access to generational wealth.  Wealth is defined as the value of a family’s assets - both money saved in bank accounts and investments as well as property like homes and cars - minus their debt.  Studies have shown that Black Americans (as well as other people of color) have far less wealth than white Americans.  In 2016, a study found that the median wealth of Black households was less than 10% of that of similar white households <a href="payday-loans.html#biblio-mortgage-discrimination" class="xref" data-knowl="./knowl/xref/biblio-mortgage-discrimination.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.5: Disparity in home lending costs minorities millions, researchers find.">[1.2.11.1.5]</a>.  Wealth tends to accumulate in families over time.  This can be direct, like inheritance, where one generation receives wealth (money or property) directly from the previous one.  It can also be indirect.  For example, a college student may indirectly inherit generational wealth when their parents pay for part or all of their college, or when they win a scholarship from opportunities provided by their parents.  This allows them to avoid taking on debt to pay for college, which would decrease their overall wealth.  This accumulated wealth, then, gives them greater opportunities to credit in their future.  The effect of generational wealth can be seen in the paradoxical relationship between wealth and debt in America.  Even though they have 10 times the median wealth, white households have median debt which is more than twice as high as Black households <a href="payday-loans.html#biblio-mortgage-discrimination" class="xref" data-knowl="./knowl/xref/biblio-mortgage-discrimination.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.5: Disparity in home lending costs minorities millions, researchers find.">[1.2.11.1.5]</a>.  The debt held by white households, though, tends to be less costly than that held by Black households.  Much of this discrepancy is due to access to cheaper forms of debt like home mortgages, home equity loans, and student loans.  Black households tend to hold more of their debt in more expensive forms of credit like credit card debt and installment loans.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-8">On the surface, payday loans are available to anyone.  Because wealthier and white households tend to have access to other forms of credit, payday loans tend to be used primarily by poorer households and people of color.  People who do not own their own home are 57% more likely to use payday loans than homeowners.  People without a 4-year college degree are 82% more likely to use payday loans than those with degrees.  Race, though, was the greatest predictor of whether someone had used a payday loan - Blacks were more than twice as likely (105% more likely) to have used a payday loan as individuals of other races and ethnicities, even after controlling for other factors like income level and homeownership <a href="payday-loans.html#biblio-race-and-payday-lending" class="xref" data-knowl="./knowl/xref/biblio-race-and-payday-lending.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.7">[1.2.11.1.7]</a>.  If access to credit were only determined by risk - factors like income and access to security - we could expect the percentage of white and Black borrowers to be similar.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-9">In addition to the obstacles imposed by lending discrimination and lack of generational wealth, there are other reasons why people would turn to predatory forms of lending. One very simple reason is where they live.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-10">A study in 2019 found that there are simply fewer banks in majority Black neighborhoods.  In areas where the majority of residents were white, there was an average of 41 banks &amp; other financial institutions per 100,000 people.  In majority non-white neighborhoods, that number fell to 27 per 100,000.  Furthermore, banks in majority Black neighborhoods tended to charge higher fees than those in majority white neighborhoods <a href="payday-loans.html#biblio-race-and-banking" class="xref" data-knowl="./knowl/xref/biblio-race-and-banking.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.8: African Americans underserved by U.S. banks: study">[1.2.11.1.8]</a>.</div>
+<div class="para" id="payday-loans-background-discriminatory-lending-11">The lack of banks in majority Black neighborhoods is mirrored by a greater concentration of payday lenders.  A 2016 study in California found that the neighborhoods where payday lenders were concentrated were much more likely to be majority Black or Latinx <a href="payday-loans.html#biblio-payday-lending-in-black-neighborhoods" class="xref" data-knowl="./knowl/xref/biblio-payday-lending-in-black-neighborhoods.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.9: The Demographics of California Payday Lending: A Zip Code Analysis of Storefront Locations">[1.2.11.1.9]</a>.  A 2020 survey found that Black respondents were more than twice as likely to say that they lived within one mile of a payday lender <a href="payday-loans.html#biblio-payday-lending-race-survey" class="xref" data-knowl="./knowl/xref/biblio-payday-lending-race-survey.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.10: ‘It’s What We Call Reverse Redlining’: Measuring the Proximity of Payday Lenders, Pawn Shops to Black Adults">[1.2.11.1.10]</a>. This lack of access to low-interest lenders, coupled with easy access to high-interest lenders, is called <em class="emphasis">reverse redlining</em>.  Redlining was the (now illegal) practice of singling out minority neighborhoods for mortgage discrimination, denying loans to people buying homes in those neighborhoods.  Redlining is considered a major contributor to the generational wealth gap between Black and white americans.  Similarly, reverse redlining creates neighborhoods without access to low-interest credit - not because of bank policies, per se, but because of physical proximity to lending institutions.</div></section><section class="conclusion" id="payday-loans-background-5"><div class="para" id="payday-loans-background-5-1">We’ve learned a lot about payday lenders - how they operate, why people use them, where they are, and what they do.  Now that we understand the sociological aspects of the issue, let’s dive into the mathematics.  Mathematics can help us understand just how unfair payday lending is, how these lenders turn a profit, and study the inequity in where payday lenders are located.  We’ll learn the mathematics we need to analyze these issues, and then dive into some deeper exploration of the inequity of payday lending.</div></section></section><section class="section" id="payday-loans-cui-bono"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Cui Bono - Who Benefits?</span>
+</h3>
+<div class="para" id="payday-loans-cui-bono-2">When a crime is committed, the investigation often revolves around the concept of <em class="emphasis">cui bono</em> - Latin for "who benefits?"  While social justice issues are not crimes (well, sometimes they are), thinking about who stands to profit from the status quo can help us to understand how to solve the problem.</div>
+<figure class="figure figure-like" id="payday-loans-cui-bono-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/money.jpeg" class="contained" alt="Rolls of hundred dollar bills."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span>"Money" by free pictures of money is licensed with <a class="external" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-cui-bono-3-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-cui-bono-3-2-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/2.0/</code></div></details>.</figcaption></figure><article class="assemblage assemblage-like" id="payday-loans-cui-bono-4"><div class="para" id="payday-loans-cui-bono-4-1">The Payday Lending industry in the USA had 11.2 billion dollars of revenue in 2019<a href="payday-loans.html#biblio-ibis" class="xref" data-knowl="./knowl/xref/biblio-ibis.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.4: Check Cashing &amp; Payday Loan Services in the US Market Size 2003-2025">[1.2.11.1.4]</a>.  These companies benefit directly from the profits of payday lending, but they are not the only ones. A 2011 report by the Public Accountability Initiative found that payday lenders obtain much of their financing from major banks like Wells Fargo, JP Morgan Chase, and Bank of America <a href="payday-loans.html#biblio-public-accountability-initiative" class="xref" data-knowl="./knowl/xref/biblio-public-accountability-initiative.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.3: The Predator’s Creditors: How the Biggest Banks are Bankrolling the Payday Loan Industry">[1.2.11.1.3]</a>.  They also found that the payday lenders had ties to many of the large Wall Street investment banks, either through partial ownership or through shared personnel.</div></article></section><section class="section" id="payday-loans-big-problem"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">The Big Problem: Predatory Lending</span>
+</h3>
+<article class="assemblage assemblage-like" id="payday-loans-big-problem-2"><div class="para" id="payday-loans-big-problem-2-1">What counts as predatory lending? What kinds of laws can help protect consumers? What are resources that can be provided to help people avoid predatory lending?</div></article><div class="para" id="payday-loans-big-problem-3">In order to help people avoid predatory lending, we first need to figure out what predatory lending is.  We’ll look at how we can compare different loans using interest rates - even if they’re not clearly spelled out information we’re given.</div>
+<div class="para" id="payday-loans-big-problem-4">We’ll talk about how high interest rates can be disguised as fees or rolled into payments. We’ll discuss the different possible ways that companies can mislead consumers about the cost of their products.</div>
+<div class="para" id="payday-loans-big-problem-5">We’ll look at the concept of risk and expected value.  Predatory lending is based on the idea that higher risk borrowers - those less likely to be able to repay the loan - must pay higher interest rates.  But how high is too high?</div>
+<div class="para" id="payday-loans-big-problem-6">We’ll look at reverse redlining - where are payday lenders located? Do the patterns that were seen in California reappear in other places? How can we look at data and see where payday lenders are more likely to be?</div>
+<div class="para" id="payday-loans-big-problem-7">Finally, we’ll discuss what can be done to help people avoid predatory lending.  Are there laws which can be passed? Can community organizations help people find non-predatory lenders? How can we help people access credit from non-predatory sources?</div></section><section class="section" id="payday-loans-interest"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Simple and Compound Interest</span>
+</h3>
+<section class="introduction" id="payday-loans-interest-2"><div class="para" id="payday-loans-interest-2-1">There are two main types of interest - simple and compound.  Let’s look at the mathematics involved in calculating each.  Then we’ll see how we can use this mathematics to look at payday loans.</div></section><section class="subsection" id="payday-loans-simple-interest"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5.1</span><span class="space"> </span><span class="title">Simple Interest</span>
+</h4>
+<div class="para" id="payday-loans-simple-interest-2">Mathematically, interest is computed by taking a percentage of the principal.  We can think about interest from two perspectives.  From the perspective of the bank or the person loaning the money, they are making an <em class="emphasis">investment</em> - they give someone a certain amount of money, with the expectation that they will be paid back more money in the future.  From the perspective of the borrower, this money (or the object that they bought with it, like a house or a car) is a <em class="emphasis">loan</em> - they will repay more back in the future than what they borrowed.</div>
+<figure class="figure figure-like" id="payday-loans-simple-interest-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/rising-interest.jpeg" class="contained" alt="Stacks of money getting higher with an arrow drawn along the tops of the increasing stacks."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span>"rising-interest-rates-new-image1" by bhautikjoshi is licensed with <a class="external" href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-simple-interest-3-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-simple-interest-3-2-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-nc-nd/2.0/</code></div></details>.</figcaption></figure><article class="assemblage assemblage-like" id="payday-loans-simple-interest-4"><h5 class="heading"><span class="title">Simple Interest.</span></h5>
+<div class="para" id="payday-loans-simple-interest-4-2">If you invest a <em class="emphasis">principle</em> at an APR (written as a decimal) for a given number of years, the investment will now be worth:</div>
+<div class="para logical" id="payday-loans-simple-interest-4-3"><div class="displaymath process-math">
+\begin{equation*}
+amount = principle*(1 + APR*Time)
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-simple-interest-4-4">This can also be written, using variables, as</div>
+<div class="para logical" id="payday-loans-simple-interest-4-5"><div class="displaymath process-math">
+\begin{equation*}
+A = P(1 + r*t)
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-simple-interest-4-6">Here, <span class="process-math">\(A\)</span> is the amount the investment is worth, <span class="process-math">\(p\)</span> is the principle, <span class="process-math">\(r\)</span> is the APR (written as a decimal), and <span class="process-math">\(t\)</span> is the amount of time that the loan is made for.</div></article><div class="para" id="payday-loans-simple-interest-5">Simple interest is usually used for transactions between friends and family or for certain types of loans, like automobile purchases.  It is used because it is easy to calculate and understand.</div>
+<div class="para" id="payday-loans-simple-interest-6">Here are some examples for you to try:</div>
+<article class="example example-like" id="payday-loans-simple-interest-7"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-simple-interest-7-1-1">Susan’s parents loan them $1000 to help them move into a new apartment.  They ask that Susan pay the money back in 2 years with 4% simple interest.  How much will they owe?</div>
+<div class="solutions"><details id="payday-loans-simple-interest-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="payday-loans-simple-interest-7-2-1">4%, written as a decimal, is <span class="process-math">\(0.04\text{.}\)</span>  So using the formula above, we get that Susan owes their parents</div>
+<div class="displaymath process-math">
+\begin{equation*}
+amount = 1000*(1+0.04*2) = \$1080
+\end{equation*}
+</div>
+</div></details></div></article><article class="example example-like" id="payday-loans-simple-interest-8"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-simple-interest-8-1-1">Fernando purchases a $20,000 car.  The dealership loans them the money to buy the car at a 3.85% simple interest, for 5 years.  How much will Fernando need to pay each month to pay off the car in 5 years?</div>
+<div class="solutions">
+<details id="payday-loans-simple-interest-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-simple-interest-8-2-1">First compute how much Fernando owes total.  How many monthly payments will there be?</div></div></details><details id="payday-loans-simple-interest-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="payday-loans-simple-interest-8-3-1">The total amount that Fernando owes is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+amount = 20000*(1 + 0.0385*5) = \$23,850
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-simple-interest-8-3-3">Since they are paying off the debt over 5 years, they will make <span class="process-math">\(5*12=60\)</span> monthly payments.  Assuming that all of the monthly payments are the same, Fernando will need to pay</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\$23850}{60} = \$397.50
+\end{equation*}
+</div>
+</div></details>
+</div></article></section><section class="subsection" id="payday-loans-compound-interest"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5.2</span><span class="space"> </span><span class="title">Compound Interest</span>
+</h4>
+<div class="para" id="payday-loans-compound-interest-2">Most lenders actually use a different way of calculating interest, called <em class="emphasis">compound interest</em>.  In compound interest, rather than just taking a percentage of the amount once, interest is calculated regularly - every day, month, year, or some other unit of time.  This causes interest to accumulate more rapidly, since you are taking a percentage not just of the original amount, but also of any interest that has already been added on.</div>
+<div class="para" id="payday-loans-compound-interest-3">For example, imagine you borrow $100 at 5% interest for 10 years.  With simple interest, you would add 5% of $100 - $5 - each year for 10 years, for a total of $50 worth of interest.  You would end up owing $150 after 10 years.  If you were paying 5% interest <em class="emphasis">compounded annually</em>, though, you would take 5% of the amount each year - including any interest that has already accumulated.</div>
+<figure class="table table-like" id="payday-loans-compound-interest-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.4<span class="period">.</span></span><span class="space"> </span>5% interest compounded annually.</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t0 lines">Year</td>
+<td class="l m b2 r0 l0 t0 lines">Total Amount Owed with Interest</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">100</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">105 = 100 + 100*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">110.25 = 105 + 105*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">115.76 = 110.25 + 110.25*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">121.55 = 115.76 + 115.76*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">127.63 = 121.55 + 121.55*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">134.01 = 127.63 + 127.63*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">140.71 = 134.01 + 134.01*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">147.75 = 140.71 + 140.71*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">155.13 = 147.75 + 147.75*0.05</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">162.89 = 155.13 + 155.13*0.05</td>
+</tr>
+</table></div></figure><div class="para logical" id="payday-loans-compound-interest-5">
+<div class="para">If we were using simple interest to calculate the amount owed here, after 10 years, we would owe</div>
+<div class="displaymath process-math">
+\begin{equation*}
+100 + 100*0.05*10 = \$150
+\end{equation*}
+</div>
+<div class="para">The additional $12.89 is interest which is being paid on the interest!</div>
+</div>
+<div class="para" id="payday-loans-compound-interest-6">$12 may not seem like that big of a deal (although it can be, for people who are really struggling), but compound interest adds up much faster when the amount borrowed or the interest rate is larger.  Even a small increase in the interest rate can have a huge effect on the amount owed at the end of the loan.</div>
+<div class="para" id="payday-loans-compound-interest-7">Creating this table isn’t hard, but it is time-consuming.  One of the most important parts of mathematics is looking for patterns in numbers that we can use to save time.  In this formula, we can see that each time we take the previous amount and add 0.05 times that amount:</div>
+<div class="para logical" id="payday-loans-compound-interest-8"><div class="displaymath process-math">
+\begin{equation*}
+105 = 100 + 100*0.05
+\end{equation*}
+</div></div>
+<div class="para logical" id="payday-loans-compound-interest-9"><div class="displaymath process-math">
+\begin{equation*}
+110.25 = 105 + 105*0.05
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-compound-interest-10">Notice that this is the same thing as multiplying the previous amount by 1.05</div>
+<div class="para logical" id="payday-loans-compound-interest-11"><div class="displaymath process-math">
+\begin{equation*}
+105 = 100 + 100*0.05 = 100*1.05
+\end{equation*}
+</div></div>
+<div class="para logical" id="payday-loans-compound-interest-12"><div class="displaymath process-math">
+\begin{equation*}
+110.25 = 105 + 105*0.05 = 105*1.05
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-compound-interest-13">Multiplying by the same amount at every step gets us an <em class="emphasis">exponential</em> relationship.  We have</div>
+<div class="para logical" id="payday-loans-compound-interest-14"><div class="displaymath process-math">
+\begin{equation*}
+105 = 100*1.05
+\end{equation*}
+</div></div>
+<div class="para logical" id="payday-loans-compound-interest-15"><div class="displaymath process-math">
+\begin{equation*}
+110.25 = 105*1.05 = 100*1.05*1.05 = 100*1.05^2
+\end{equation*}
+</div></div>
+<div class="para logical" id="payday-loans-compound-interest-16"><div class="displaymath process-math">
+\begin{equation*}
+115.76 = 110.25*1.05 = 100*1.05^3
+\end{equation*}
+</div></div>
+<div class="para logical" id="payday-loans-compound-interest-17">
+<div class="para">All together, this suggests a faster way to get any of the values in the table above, by using an exponential equation.  After <em class="emphasis">n</em> years, we will owe</div>
+<div class="displaymath process-math">
+\begin{equation*}
+100*1.05^n
+\end{equation*}
+</div>
+<div class="para">dollars.  This gives us an equation for the amount of money owed when interest is computed annually.</div>
+</div>
+<div class="para logical" id="payday-loans-compound-interest-18">
+<div class="para">In general, though, lenders can charge interest as often as they like.  Interest is frequently compounded <em class="emphasis">monthly</em> (12 times a year) or <em class="emphasis">daily</em> (365 times a year).  In these cases, we use basically the same formula - with two main changes.</div>
+<ul class="disc" id="payday-loans-compound-interest-18-3">
+<li id="payday-loans-compound-interest-18-3-1"><div class="para" id="p-derived-payday-loans-compound-interest-18-3-1">If you pay 12% interest over the year, but you’re being charged interest each month, you wouldn’t pay 12% interest every month! Instead, we divide the interest rate by the number of times we compound each year.  12% annual interest would become<div class="displaymath process-math">
+\begin{equation*}
+\frac{12\%}{12} = 1\%
+\end{equation*}
+</div>monthly interest.  If we were compounding daily, we would have<div class="displaymath process-math">
+\begin{equation*}
+\frac{12\%}{365} = 0.03288\%
+\end{equation*}
+</div>daily interest.</div></li>
+<li id="payday-loans-compound-interest-18-3-2"><div class="para" id="p-derived-payday-loans-compound-interest-18-3-2">We also need to increase the power on our exponent.  If you compute interest every month for 10 years, you’re computing interest 12*10 = 120 times overall.  If you’re compounding daily, you would have 365*10 = 3650 times overall.</div></li>
+</ul>
+<div class="para">Making these two changes gives us our formula for Compound Interest.</div>
+</div>
+<article class="assemblage assemblage-like" id="payday-loans-compound-interest-19"><h5 class="heading"><span class="title">Compound Interest.</span></h5>
+<div class="para" id="payday-loans-compound-interest-19-2">If you invest a <em class="emphasis">principle</em> at an APR (written as a decimal) for a given number of years, compounded <span class="process-math">\(k\)</span> times per year, the investment will now be worth:</div>
+<div class="para logical" id="payday-loans-compound-interest-19-3"><div class="displaymath process-math">
+\begin{equation*}
+amount = principle*\left(1 + \frac{APR}{k}\right)^{(k*Time)}
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-compound-interest-19-4">This can also be written, using variables, as</div>
+<div class="para logical" id="payday-loans-compound-interest-19-5"><div class="displaymath process-math">
+\begin{equation*}
+A = P\left(1 + \frac{r}{k}\right)^{(k*t)}
+\end{equation*}
+</div></div>
+<div class="para" id="payday-loans-compound-interest-19-6">Here, <span class="process-math">\(A\)</span> is the amount the investment is worth, <span class="process-math">\(p\)</span> is the principle, <span class="process-math">\(r\)</span> is the APR (written as a decimal), <span class="process-math">\(k\)</span> is the number of times interest is compounded each year, and <span class="process-math">\(t\)</span> is the amount of time that the loan is made for.</div></article><div class="para logical" id="payday-loans-compound-interest-20">
+<div class="para">This exponential growth is what makes a small change to the interest rate such a big deal.  Let’s look at two loans - both for $1000, compounded monthly, over a period of 10 years.  One lender charges an APR of 4%, while the other lender charges 7%.  Let’s see how much you owe at the end of 10 years using each formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 1000\left(1 + \frac{0.04}{12}\right)^{(12*10)} = 1490.83
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 1000\left(1 + \frac{0.07}{12}\right)^{(12*10)} = 2009.66
+\end{equation*}
+</div>
+<div class="para">Even though 7% is only a small amount large than 4%, it makes a huge difference - over $500 - in how much you owe at the end of the loan.  Increasing the loan to 10% makes an even bigger difference:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1000\left(1 + \frac{0.10}{12}\right)^{(12*10)} = \$2707.04
+\end{equation*}
+</div>
+</div>
+<article class="example example-like" id="payday-loans-compound-interest-21"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-compound-interest-21-1-1">Tasha borrows $2000 at 14% interest, compounded monthly.  How much will they owe in a year?</div>
+<div class="solutions">
+<details id="payday-loans-compound-interest-21-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-compound-interest-21-2-1">We can tell this is compound interest because it says compounded. Figure out which numbers go where in the formula.</div></div></details><details id="payday-loans-compound-interest-21-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-compound-interest-21-3-1">
+<div class="para">Tasha will owe</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 2000*\left(1 + \frac{0.14}{12}\right)^{12*1} = \$2298.68
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="example example-like" id="payday-loans-compound-interest-22"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-compound-interest-22-1-1">Diego borrowed money at a 15% interest rate for 5 years, compounded daily.  If they had to pay back $3000, how much did they borrow originally?</div>
+<div class="solutions">
+<details id="payday-loans-compound-interest-22-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-compound-interest-22-2-1">In this example, what are we looking for? Put everything else into the compound interest formula and solve for the missing variable.</div></div></details><details id="payday-loans-compound-interest-22-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-compound-interest-22-3-1">
+<div class="para">We know what Diego has to pay back (A in the formula), but we don’t know what he borrowed in the first place (P in the formula).  So we have:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3000 = P*\left(1 + \frac{0.15}{365}\right)^{(5*365)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3000}{\left(1 + \frac{0.15}{365}\right)^{(5*365)}} = P
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\$1417.32 = P
+\end{equation*}
+</div>
+<div class="para">Diego only borrowed $1417.32 at the beginning of the 5 years.  They paid back over twice as much as they borrowed.</div>
+</div></div></details>
+</div></article></section><section class="subsection" id="payday-loans-solving-for-apr"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5.3</span><span class="space"> </span><span class="title">Finding the Interest Rate</span>
+</h4>
+<div class="para" id="payday-loans-solving-for-apr-2">One of the ways that payday lenders conceal how much interest they’re charging is by charging a "fee" instead of an interest rate.  For example, a payday lender may loan someone $200 for two weeks.  When they pay the money back, they charge them a $20 fee.</div>
+<div class="para" id="payday-loans-solving-for-apr-3">In this example, $20 may not seem like a lot - it’s only 10% of the $200 that they borrowed.  Remember, though, that when we talk about interest rates, we talk about <em class="emphasis">annual</em> percentage rates.  This is 10% over two weeks - if you don’t pay the $20 at the end of the first two weeks, you’ll be charged another $20 at the end of the next two weeks! There are 52 weeks in the year, so by the end of the year (26 two-week periods) you would have paid <span class="process-math">\(26*20 = \$520\)</span> in interest - that’s <span class="process-math">\(\frac{520}{200} = 2.6 = 260\%\)</span> of the amount you borrowed!  The annual percentage rate is 260%!</div>
+<div class="para" id="payday-loans-solving-for-apr-4">Notice that this is <em class="emphasis">simple interest</em> - the amount of interest that they charge you each time didn’t change (it was $20 every two weeks).  Most payday lenders work this way - every two weeks you pay the fee until you can pay back the original money you borrowed.  The fees vary, but are usually between $10 and $30 per $100 borrowed every two weeks.<a href="payday-loans.html#biblio-payday-loan-cfpb" class="xref" data-knowl="./knowl/xref/biblio-payday-loan-cfpb.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.2: Consumer Financial Protection Bureau: What is a Payday Loan">[1.2.11.1.2]</a>
+</div>
+<div class="para logical" id="payday-loans-solving-for-apr-5">
+<div class="para">You can use the simple interest formula to figure out what the equivalent annual interest rate is.  Remember that when you use the formula, the time is always in years, so 2 weeks would equal <span class="process-math">\(\frac{1}{26}\)</span> of a year.  Say you borrow $300 and pay a $25 fee per $100 for every two weeks.  You’ll owe <span class="process-math">\(300+25*3 = \$375\)</span> at the end of the two weeks, so the simple interest formula gives you:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+375 = 300\left(1 + r*\left(\frac{1}{26}\right)\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3275 = 300 + \left(\frac{150}{13}\right)r
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+75 = \left(\frac{150}{13}\right)r
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = 75*\left(\frac{13}{150}\right) = 6.5 = 650\%
+\end{equation*}
+</div>
+<div class="para">The equivalent annual percentage rate is 650%.</div>
+</div>
+<div class="para" id="payday-loans-solving-for-apr-6">How much would you owe after two weeks if you borrowed the same money on a credit card which charges 22% interest, compounded daily?  Here we use the compound interest formula.  Even though 22% is a pretty high interest rate for a credit card, you’ll still end up paying a lot less than the payday loan:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/biblio-payday-loan-cfpb.html">
+\begin{equation*}
+A = 300*\left(1 + \frac{0.22}{365}\right)^{\left(365*\frac{1}{26}\right)} = \$302.55
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-solving-for-apr-8">At 22%, compounded daily, you end up just paying $2.55 in interest after 2 weeks.</div></section></section><section class="section" id="payday-loans-risk"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="space"> </span><span class="title">Risk and Credit Scores</span>
+</h3>
+<section class="introduction" id="payday-loans-risk-2"><div class="para" id="payday-loans-risk-2-1">When we talked about lending in the introduction, we discussed the <em class="emphasis">credit score</em>.  Your credit score is a number - usually between 300 and 850 in the United States - which tells a lender how likely you are to repay borrowed money.  We can think of a credit score in terms of probability.</div></section><section class="subsection" id="payday-loans-probability"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6.1</span><span class="space"> </span><span class="title">Introduction to Probability</span>
+</h4>
+<div class="para" id="payday-loans-probability-2">The <em class="emphasis">probability</em> of a particular event occurring is a number between 0 and 1 (or, equivalently, between 0% and 100%) which measures how likely that event is to occur.  If something has a probability of 0, that means it will never happen.  If it has a probability of 1, then it will always happen, no matter what.</div>
+<div class="para" id="payday-loans-probability-3">Usually, when we study probability, we talk about simple situations where it’s easy to determine the probability.  For example, if you roll a 6-sided die, the probability that you get a 6 is <span class="process-math">\(\frac{1}{6}\)</span> because you’re looking at 1 possibility out of 6 total.</div>
+<div class="para" id="payday-loans-probability-4">However, in the real world, probabilities are usually much more complicated to determine.  To calculate your credit score, credit reporting agencies use many different factors - how long you’ve had loans or credit cards, how many times you have been late paying your bills, and the types of loans and credit cards that you have. There is no simple formula to calculate how likely you are to repay a loan.  The credit score summarizes the complicated calculations that have gone into determining the likelihood of you paying back money that you borrow.</div>
+<div class="para logical" id="payday-loans-probability-5">
+<div class="para">Although it is an oversimplification of the actual situation, we’ll use the credit score as a simple measure of probability so that we can see an example of how it works.  We’ll treat a score of 300 - the lowest score - as meaning that the probability you pay back a loan is 0%.  We’ll say that a credit score of 850 means that there is a 100% chance that you pay back the loan on time.  We’ll treat every score between as a number between 0 and 100% using the formula</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{credit score - 300}{850-300}
+\end{equation*}
+</div>
+<div class="para">So a credit score of 700, in our simplification would mean a <span class="process-math">\(\frac{700-300}{850-300} = 0.73 = 73\%\)</span> chance of repaying the loan on time.</div>
+</div></section><section class="subsection" id="payday-loans-expected-value"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6.2</span><span class="space"> </span><span class="title">Expected Value</span>
+</h4>
+<div class="para" id="payday-loans-expected-value-2">Once banks determine how likely you are to repay a loan, they can make a decision about whether they will loan you money, whether that’s as a student loan, credit card, or something else.  They use the credit score to determine the amount of money they can expect to make off of the loan.  If you don’t repay the loan, they will lose all of the money that they loaned you.  If you do repay the loan, then they make money - in the form of the interest that you pay back on the loan.  This is called the <em class="emphasis">expected value</em> of the loan.  It depends on both the probability that a borrower will pay back the loan, the amount of money being borrowed, and the amount of interest that the bank will make off of the loan.</div>
+<div class="para" id="payday-loans-expected-value-3">Before we look at the expected value of a loan, let’s define the expected value in general.  Expected value works by using the probability to weight the reward of different events happening.  Consider this example: Say a friend makes you an offer.  They’ll flip a coin.  If the coin comes up heads, they’ll pay you $1.  If the coin comes up tails, you pay them $1.</div>
+<div class="para" id="payday-loans-expected-value-4">If you play the game just once, you’ll end up either $1 richer or $1 poorer - there’s a 50% chance of either.  If you play it twice, you either win both, win the first and lose the second, lose the first and win the second, or lose both - so there are 4 possibilities.  If you win both times, you’re $2 richer.  If you win one and lose one (either of the middle two situations) you’re back where you started - $0 richer.  If you lose both, you’re $2 poorer.  If you average out the different scenarios, you end up exactly where you started - there’s exactly the same chance of winning money as losing.  So we say the expected value is $0 - on average, we don’t expect to end up with any more money than we started with.</div>
+<div class="para" id="payday-loans-expected-value-5">Expected value depends on probability - so it certainly isn’t saying that if you play that game with your friend, you won’t win any money! You could play 10 times and win every time...it just isn’t very likely (the chance of that happening is a little less than 1/1000)</div>
+<article class="assemblage assemblage-like" id="payday-loans-expected-value-6"><h5 class="heading"><span class="title">Expected Value.</span></h5>
+<div class="para logical" id="payday-loans-expected-value-6-2">
+<div class="para">Suppose you have multiple different possible events, each with some probability of occurring, and each with some "reward" our "benefit" (penalties or losses are represented as negative rewards).  Then the expected value is found by taking the probability of each event times the reward of that event, and adding them up:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(event 1)*R(event 1) + P(event 2)*R(event 2)
+\end{equation*}
+</div>
+<div class="para">where P(event) is the probability of the event, and R(event) is the reward.  You can continue this for more than 2 events - just multiply the probability times the reward and add it on.</div>
+</div>
+<div class="para" id="payday-loans-expected-value-6-3">The expected value tells you, on average, how much you can expect to "win" each time an event happens, by averaging out the wins and losses.</div></article><div class="para" id="payday-loans-expected-value-7">Let’s look at an example of how this works, using insurance as an example.  When an insurance company sells you insurance, they calculate the probability that you will use it - and how much they’ll have to pay you if you do use it.  If you don’t use the insurance, they "win" the amount of money that you pay for the insurance - if you do use it, they lose whatever they have to pay out for the claim (minus whatever you paid them).  On average, over lots and lots of customers, they’ll earn the expected value from each customer. Let’s look at an example.</div>
+<div class="para" id="payday-loans-expected-value-8">An insurance company calculates that there is a 1% chance that a driver has a car accident each year, and that on average they will have to pay $15,000 per accident.  They charge $600 a year for insurance.  How much can they expect to earn, on average, from each customer?</div>
+<div class="para logical" id="payday-loans-expected-value-9">
+<div class="para">The probability of having an accident is 1% (0.01), which means that the probability of not having an accident is 99% (0.99).  If you have an accident, the insurance company loses $15,000, minus the $600 you paid them, for a net "reward" of <span class="process-math">\(\$600 - \$15,000 = -\$14,400\text{.}\)</span>  If you don’t have an accident, they earn a "reward" of $600 - the amount you paid for your insurance.  The expected value, then is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.01*(-14,400) + 0.99(600) = \$450
+\end{equation*}
+</div>
+<div class="para">On average, they can expect to earn $450 per customer that they sell insurance to.</div>
+</div>
+<div class="para" id="payday-loans-expected-value-10">Give it a try yourself - here are some examples to work out.</div>
+<article class="example example-like" id="payday-loans-expected-value-11"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-expected-value-11-1-1">An insurance company charges $2000 a year for home insurance. There is a 2% chance each year that a homeowner will make a claim, and the insurance company will need to pay them $23,000.  What is the expected value?</div>
+<div class="solutions">
+<details id="payday-loans-expected-value-11-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-expected-value-11-2-1">What is the probability that they have to pay money out? How much will they lose if they do (remember they get to keep the money that was paid for the insurance policy)?</div></div></details><details id="payday-loans-expected-value-11-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-expected-value-11-3-1">
+<div class="para">The probability that they will have to pay is 2% = 0.02.  If they do have to pay, they will lose $23,000 minus the $2000 they charged the customer, for a total of $21,000.  There is a 98% = 0.98 chance that they don’t have to pay, in which case they’ll earn $2000 from the customer’s premium. The expected value for the insurance company is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.02*(21,000)+0.98(2000) = \$1540 
+\end{equation*}
+</div>
+<div class="para">On average, they can expect to earn $1540 per customer.</div>
+</div></div></details>
+</div></article><div class="para" id="payday-loans-expected-value-12">Let’s look at example explicitly about how payday lenders operate.  Most payday lenders make their money because people renew their loans week after week, paying larger fees to borrow the money for a longer period of time.</div>
+<article class="example example-like" id="payday-loans-expected-value-13"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-expected-value-13-1-1">A payday lender loans you $200 with a $30 fee, to be paid back in 2 weeks.  If you don’t pay it back in 2 weeks, you’ll be charged another $30 fee, and another $30 for each 2 weeks after that.  They think that there is a 10% chance you’ll pay it back in 2 weeks, a 20% chance you’ll pay it back in 4 weeks, a 60% chance you’ll pay it back in 6 weeks, and a 10% chance you won’t pay it back at all.  What is the expected value of the loan for the lender?</div>
+<div class="solutions">
+<details id="payday-loans-expected-value-13-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-expected-value-13-2-1">Think about how much the payday lender earns (or loses) in each case.</div></div></details><details id="payday-loans-expected-value-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-expected-value-13-3-1">
+<div class="para">There are 4 different situations here.  If you pay the loan back in 2 weeks (10% chance), the lender earns $30.  If you pay it back in 4 weeks (20% chance), they earn $60.  If you pay it back in 6 weeks (60% chance), they earn $90.  If you don’t pay it back (10% chance), they lose $200.  The expected value is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.10*30 + 0.20*60 + 0.60*90 + 0.10*(-200) = \$49
+\end{equation*}
+</div>
+<div class="para">On average, they can expect to earn $49 per customer.</div>
+</div></div></details>
+</div></article></section><section class="subsection" id="payday-loans-lending-decisions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6.3</span><span class="space"> </span><span class="title">How Banks Make Lending Decisions</span>
+</h4>
+<div class="para" id="payday-loans-lending-decisions-2">Banks use the idea of risk to make decisions about how much money they will lend.  We’ll look at a simplified example of how this works, though the reality is, of course, more complicated.  This will still give you an idea, fundamentally of how it works.</div>
+<div class="para" id="payday-loans-lending-decisions-3">Say that you want to borrow $1000 from a bank via an unsecured loan. If the loan were secured, and you didn’t pay it back, the bank could seize your house or car or whatever you had secured the loan with.  Since it’s unsecured, the bank will lose all of the money that they loaned you if you don’t pay it back.  Therefore, they want to make the expected value of loaning you money positive (for them) - that is, they want to ensure that on average the money that you pay them in interest makes up for the risk of you not paying the loan back.</div>
+<div class="para" id="payday-loans-lending-decisions-4">Let’s look at the situation where the bank loans you $1000 for 1 year, simple interest, and let’s assume that they decide there’s a 10% chance you don’t pay the loan off.  If the interest rate is <em class="emphasis">r</em>, the expected value calculations look like this: <figure class="table table-like" id="payday-loans-lending-decisions-4-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span>Expected Value for a $1000 loan for 1 year with 10% risk of default</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t0 lines">Rate (r)</td>
+<td class="l m b2 r0 l0 t0 lines">Amount of Interest</td>
+<td class="l m b2 r0 l0 t0 lines">Expected Value</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.02</td>
+<td class="l m b0 r0 l0 t0 lines">$20</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(20) = -82\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.03</td>
+<td class="l m b0 r0 l0 t0 lines">$30</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(30) = -73\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.04</td>
+<td class="l m b0 r0 l0 t0 lines">$40</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(40) = -64\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.05</td>
+<td class="l m b0 r0 l0 t0 lines">$50</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(50) = -55\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.06</td>
+<td class="l m b0 r0 l0 t0 lines">$60</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(60) = -46\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.07</td>
+<td class="l m b0 r0 l0 t0 lines">$70</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(70) = -37\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.08</td>
+<td class="l m b0 r0 l0 t0 lines">$80</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(80) = -28\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.09</td>
+<td class="l m b0 r0 l0 t0 lines">$90</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(90) = -19\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.10</td>
+<td class="l m b0 r0 l0 t0 lines">$100</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(100) = -10\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.11</td>
+<td class="l m b0 r0 l0 t0 lines">$110</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(110) = -1\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.12</td>
+<td class="l m b0 r0 l0 t0 lines">$120</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1*(-1000)+0.9*(120) = 8\)</span></td>
+</tr>
+</table></div></figure> The bank would need to charge at least 12% interest to be guaranteed to make money.  In practice, a bank would charge considerably more interest for an unsecured loan if there were such a large chance they would get none of the money back - if they would loan it at all.  If you don’t pay back your loan, your bank will sell the debt to a debt collector - who will pay them what they think the loan is worth, usually a fraction of the loan.  The debt collector will then attempt to get the money back through legal actions like lawsuits and garnished wages.</div>
+<article class="example example-like" id="payday-loans-lending-decisions-5"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-lending-decisions-5-1-1">You apply for a loan of $10,000 from a bank.  They compute that there is a 1% chance that you won’t pay the loan back, in which case they’ll sell it to a debt collector for $5000.  What is the expected value for the bank if they charge you 4.25% interest, simple interest, and you pay the loan back in 2 years?</div>
+<div class="solutions">
+<details id="payday-loans-lending-decisions-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-lending-decisions-5-2-1">What does the bank gain if you pay the loan back? What do they lose if you don’t?</div></div></details><details id="payday-loans-lending-decisions-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-lending-decisions-5-3-1">
+<div class="para">There are 2 different situations here - either you don’t pay the loan back in 2 years, or you do.  If you don’t (1% chance), then the bank loses $5000 (they loaned you $10,000, and the debt collector only paid them $5,000). If you do pay it back (99% chance), then the bank gains the interest you paid back. After 2 years of 4.25% simple interest, you pay the bank back</div>
+<div class="displaymath process-math">
+\begin{equation*}
+10000 + 10000*0.0425*2 = \$10,850
+\end{equation*}
+</div>
+<div class="para">The bank earned $850 (they loaned you $10,000, and got $10,850 back).  The expected value for the bank is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.01*(-5000) + 0.99*(850) = \$791.50
+\end{equation*}
+</div>
+<div class="para">If they made many loans like this, on average, they would earn $791.50 per customer.</div>
+</div></div></details>
+</div></article><div class="para" id="payday-loans-lending-decisions-6">Let’s do a more complicated example, with compound interest.</div>
+<article class="example example-like" id="payday-loans-lending-decisions-7"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h5>
+<div class="para" id="payday-loans-lending-decisions-7-1-1">The bank is considering loaning you $5,000, at a rate of 8.75%, compounded monthly, to be paid back after 3 years.  They calculate that there is a 2% chance you won’t pay the loan back, and they’ll have to sell the debt to a debt collector for $3000.  What is the expected value for the bank?</div>
+<div class="solutions">
+<details id="payday-loans-lending-decisions-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="payday-loans-lending-decisions-7-2-1">Figure out how much the bank will earn on the loan if you pay it back in full, with interest, after 3 years.</div></div></details><details id="payday-loans-lending-decisions-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="payday-loans-lending-decisions-7-3-1">
+<div class="para">If you pay the loan back, you’ll pay the bank</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 5000*\left(1 + \frac{0.0875}{12}\right)^{12*3} = \$6494.69
+\end{equation*}
+</div>
+<div class="para">This is $1494.69 more than the bank loaned you, so in this situation, they "win" $1494.69.  If you don’t pay the loan back, they lose $2000, because they can only sell the loan to a debt collector for $3000.  Thus, the expected value is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.02*(-2000)+0.98*(1494.69) = \$1424.80
+\end{equation*}
+</div>
+<div class="para">The bank can expect to earn, on average, $1424.80 on each loan like this.</div>
+</div></div></details>
+</div></article></section></section><section class="section" id="payday-loans-correlation"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="space"> </span><span class="title">Correlation</span>
+</h3>
+<section class="introduction" id="payday-loans-correlation-2"><div class="para" id="payday-loans-correlation-2-1">Our final mathematical topic for this module will be correlation.  When we looked at the background of payday lenders, we talked about the fact that they are more likely to be located in majority Black and Latinx neighborhoods.  We’ll look at analyzing this mathematically through the lens of correlation.</div></section><section class="subsection" id="payday-loans-correlation-definition"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7.1</span><span class="space"> </span><span class="title">Defining the Correlation</span>
+</h4>
+<div class="para logical" id="payday-loans-correlation-definition-2">
+<div class="para">Suppose we have two sets of numbers:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{1,2,5,6,12}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{2,4,10,12,24}
+\end{equation*}
+</div>
+<div class="para">If someone told you that the next number in the first set was 30, what would you expect the next number in the second set to be?  You would probably guess 60, because there’s a clear pattern here - the number in the second series is always exactly double the corresponding number in the first series.</div>
+</div>
+<div class="para logical" id="payday-loans-correlation-definition-3">
+<div class="para">In practice, when we look at two sets of data, the relationship between them is rarely this exact.  For example, look at these two sets of data:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{1,2,5,6,12}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{2,5,9,14,21}
+\end{equation*}
+</div>
+<div class="para">The values in the second set are just a little bit off from two times as much as the first set.  If someone told you the next number in the first set was 30, though, you would still probably expect the next number in the second set to be approximately 60 - maybe not exactly 60, but something close.  Even though one number doesn’t exactly predict the other, it comes pretty close.</div>
+</div>
+<div class="para" id="payday-loans-correlation-definition-4">The correlation is a way of measuring how closely one set of numbers predict another.  The correlation gives a number between 1 and -1.  A correlation of 0 means that there is absolutely no relationship between the two sets of numbers - when one changes, you can’t predict what will happen to the other.  A correlation of 1 means that there is a perfect relationship between the numbers - when the values in the first data set increase, the values in the second data set increases in a way that exactly corresponds.  Our first two sets of numbers would have a correlation of 1.  Our second pair would have a correlation close to 1, but not exactly 1.  A correlation of -1 also indicates a perfect relationship, but when one of the values in one set increases, the values in the second set will <em class="emphasis">decrease</em> in a way that exactly corresponds.  So the pattern is still perfect, but it works in reverse.</div>
+<div class="para" id="payday-loans-correlation-definition-5">Computing the correlation is tricky.  We’ll go through the process of computing it, which takes multiple steps, but in general we’ll do it using software.  The R programming language lets us easily find the correlation between two sets of numbers.  Here, you’ll see the two data sets we looked at above.  The cor function in R calculates the correlation between two sets of numbers - hit "Evaluate R" to calculate.  You can try different values in the exercise below - just hit "Evaluate R" to find the correlation.  You’ll see that when we look at the first pair of data sets, the correlation is exactly 1: <div id="payday-loans-correlation-definition-5-1" class="ptx-sagecell sagecell-r"><script type="text/x-sage">x <- c(1,2,5,6,12)
+y <- c(2,4,10,12,24)
+cor(x,y)
+</script></div> If we look at the second pair, though, the correlation is a little less than 1. <div id="payday-loans-correlation-definition-5-2" class="ptx-sagecell sagecell-r"><script type="text/x-sage">x <- c(1,2,5,6,12)
+y <- c(2,5,9,14,21)
+cor(x,y)
+</script></div> 0.9812022 is still very close to 1, though, because these numbers still mostly fit the pattern - just not perfectly.</div>
+<div class="para" id="payday-loans-correlation-definition-6">If we have numbers that are completely unrelated, though - where there is no pattern between how much one increases by and the other - we’ll see very low correlation: <div id="payday-loans-correlation-definition-6-1" class="ptx-sagecell sagecell-r"><script type="text/x-sage">x <- c(1,2,3,4,5)
+y <- c(7,-4,-3,-45,27)
+cor(x,y)
+</script></div>
+</div></section><section class="subsection" id="payday-loans-correlation-4"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7.2</span><span class="space"> </span><span class="title">Computing Correlation</span>
+</h4>
+<div class="para" id="payday-loans-correlation-4-2">Computing the correlation is a little complicated, and is easiest done in multiple steps. While it’s not crucial that you can go through all of these steps on your own, we’ll explain how the correlation is defined to help understand why it computes how related two sets of data are.</div>
+<article class="assemblage assemblage-like" id="payday-loans-correlation-4-3"><h5 class="heading"><span class="title">Correlation.</span></h5>
+<div class="para logical" id="payday-loans-correlation-4-3-2">
+<div class="para">If we have two sets of data <span class="process-math">\(x = {x_1,x_2,\ldots,x_n}\)</span> and <span class="process-math">\(y = {y_1,y_2,\ldots,y_n}\)</span> with the same number of values, the correlation is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+cor(x,y) = \frac{(x_1-\overline{x})(y_1-\overline{y})+(x_2-\overline{x})(y_2-\overline{y})+\cdots+(x_n-\overline{x})(y_n-\overline{y})}{(n-1)s_x s_y}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\overline{x}\)</span> and <span class="process-math">\(\overline{y}\)</span> are the means of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(s_x\)</span> and <span class="process-math">\(s_y\)</span> are the sample standard deviations of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="payday-loans-correlation-4-3-3">
+<div class="para">You can compute the mean by adding up all the values and dividing by <span class="process-math">\(n\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\overline{x} = \frac{x_1+x_2+\cdots + x_n}{n}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="payday-loans-correlation-4-3-4">
+<div class="para">You can compute the sample standard deviation by subtracting the mean from each value, squaring that, adding them all up, dividing by <span class="process-math">\((n-1)\text{,}\)</span> and taking the square root.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s_x = \sqrt{\frac{(x_1 - \overline{x})^2 + (x_2 - \overline{x})^2 + \cdots + (x_n - \overline{x})^2}{(n-1)}}
+\end{equation*}
+</div>
+</div></article><div class="para logical" id="payday-loans-correlation-4-4">
+<div class="para">This is a pretty complicated formula, but it turns out it’s pretty easy to break it down into steps.</div>
+<ol class="decimal" id="payday-loans-correlation-4-4-1">
+<li id="payday-loans-correlation-4-4-1-1"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-1">Compute the means <span class="process-math">\(\overline{x}\)</span> and <span class="process-math">\(\overline{y}\text{.}\)</span>
+</div></li>
+<li id="payday-loans-correlation-4-4-1-2"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-2">Compute the sample standard deviations <span class="process-math">\(s_x\)</span> and <span class="process-math">\(s_y\text{.}\)</span>
+</div></li>
+<li id="payday-loans-correlation-4-4-1-3"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-3">Subtract the mean <span class="process-math">\(\overline{x}\)</span> from each value in <span class="process-math">\(x\text{,}\)</span> and the mean <span class="process-math">\(\overline{y}\)</span> from each value in <span class="process-math">\(y\text{.}\)</span>
+</div></li>
+<li id="payday-loans-correlation-4-4-1-4"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-4">Multiply the corresponding differences from <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> together.</div></li>
+<li id="payday-loans-correlation-4-4-1-5"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-5">Add them all up.</div></li>
+<li id="payday-loans-correlation-4-4-1-6"><div class="para" id="p-derived-payday-loans-correlation-4-4-1-6">Divide the whole thing by <span class="process-math">\((n-1)s_x s_y\text{.}\)</span>
+</div></li>
+</ol>
+</div>
+<div class="para" id="payday-loans-correlation-4-5">Let’s see how this works with the second data set above:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = {1,2,5,6,12}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = {2,5,9,14,21}
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-correlation-4-8">First we’ll compute the means and sample standard deviations of each data set:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\overline{x} = \frac{1+2+5+6+12}{5} = 5.2
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\overline{y} = \frac{2+5+9+14+21}{5} = 10.2
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s_x = \sqrt{\frac{(1-5.2)^2 + (2-5.2)^2 + (5-5.2)^2 + (6-5.2)^2 + (12-5.2)^2}{5-1}} = 4.3244
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s_y = \sqrt{\frac{(2-10.2)^2 + (5-10.2)^2 + (9-10.2)^2 + (14-10.2)^2 + (21-10.2)^2}{5-1}} = 7.5299
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-correlation-4-13">Now that we have all of these, let’s get down to the work of calculating the correlation.  Our next step is to subtract the mean from each data value in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="payday-loans-correlation-4-14">
+\begin{gather*}
+(x - \overline{x}) = \lbrace (1-5.2),(2-5.2),(5-5.2),(6-5.2),(12-5.2)\rbrace \\
+= \lbrace -4.2,-3.2,-0.2,0.8,6.8\rbrace
+\end{gather*}
+</div>
+<div class="displaymath process-math" id="payday-loans-correlation-4-15">
+\begin{gather*}
+(y - \overline{y}) = \lbrace (2-10.2),(5-10.2),(9-10.2),(14-10.2),(21-10.2)\rbrace\\
+= \lbrace -8.2,-5.2,-1.2,3.8,10.8\rbrace
+\end{gather*}
+</div>
+<div class="para" id="payday-loans-correlation-4-16">Now we’ll multiply each corresponding pair together:</div>
+<div class="displaymath process-math" id="payday-loans-correlation-4-17">
+\begin{gather*}
+(x - \overline{x})*(y-\overline{y}) = \lbrace -4.2*-8.2,-3.2*-5.2,-0.2*-1.2,0.8*3.8,6.8*10.8\rbrace \\
+= \lbrace 34.44, 16.64, 0.24, 3.04, 73.44\rbrace
+\end{gather*}
+</div>
+<div class="para" id="payday-loans-correlation-4-18">Now we’ll add up all the values:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+34.44 + 16.64 + 0.24 + 3.04 + 73.44 = 127.8
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-correlation-4-20">And finally, we divide by <span class="process-math">\((n-1)s_x s_y\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+cor(x,y) = \frac{127.8}{(5-1)*4.3244*7.5299} = 0.9811
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-correlation-4-22">This is the same value we got from R above, up to 3 decimal places (the difference comes because we rounded <span class="process-math">\(s_x\)</span> and <span class="process-math">\(s_y\)</span>)</div></section><section class="subsection" id="payday-loans-correlation-5"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7.3</span><span class="space"> </span><span class="title">Using Correlation</span>
+</h4>
+<div class="para" id="payday-loans-correlation-5-2">Ok, so we’ve defined this correlation, which tells us how one set of numbers is related to another.  But why does it matter?</div>
+<div class="para" id="payday-loans-correlation-5-3">An old adage says that "correlation does not imply causation," meaning that just because two things are correlated doesn’t mean that change to one causes the change in another.  Two things could be correlated that are completely unrelated.  For example, there is a strong correlation (0.9039) between the number of bee colonies in the US and the divorce rate in South Carolina:</div>
+<figure class="figure figure-like" id="payday-loans-correlation-5-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/honey-producing-bee-colonies-us_divorce-rate-in-south-carolina.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span>The number of honey-producing bee colonies in the US correlates with the divorce rate in South Carolina<a href="payday-loans.html#biblio-spurious-correlations" class="xref" data-knowl="./knowl/xref/biblio-spurious-correlations.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.12: Spurious Correlations.">[1.2.11.1.12]</a></figcaption></figure><div class="para" id="payday-loans-correlation-5-5">Does this mean that bees are breaking up marriages in South Carolina, or that new divorcees are running out to start beekeeping? Of course not (or at least, probably not).  We don’t have any other reason to believe that one of these variables is causing the other.  But when there is some reason why we might believe that one thing is causing another, the correlation can give us evidence to support that theory.</div>
+<figure class="figure figure-like" id="payday-loans-correlation-5-6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/correlation.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span>Correlation does not imply causation. <a href="payday-loans.html#biblio-correlation-comic" class="xref" data-knowl="./knowl/xref/biblio-correlation-comic.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.13: Correlation.">[1.2.11.1.13]</a></figcaption></figure><div class="para" id="payday-loans-correlation-5-7">For example, because of the legacy of systemic racism and intentional exclusion of Black Americans from the financial system, we could theorize that there are fewer banks - and more payday lenders - in majority Black neighborhoods.  We could use correlation to see if there is evidence for this theory - by looking at the racial makeup of a neighborhood and seeing if there is a correlation with the number of financial institutions.  This doesn’t prove that banks are intentionally avoiding Black neighborhoods (though other evidence may support that claim) - it just provides evidence to support that theory.</div></section></section><section class="section" id="payday-loans-solving-for-change"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="space"> </span><span class="title">Solving for Change</span>
+</h3>
+<section class="introduction" id="payday-loans-solving-for-change-2"><div class="para" id="payday-loans-solving-for-change-2-1">Now that we understand interest rates, risk, and correlation, we can begin to really look at the problem of predatory lending.  The Center for Responsible Lending (CRL) tracks payday lending across the country.  Using a $300 loan, they calculated the annual percentage rate that you would pay in interest in each state of the United States.  Note that some of the states have no rate listed - those states have passed laws which make predatory lending unprofitable.</div> <figure class="figure figure-like" id="payday-loans-solving-for-change-2-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/payday-lending/images/payday-rates.png" class="contained" alt="Map of the United States with typical payday loan APR. Image description available."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span>Payday lending rates by state. States with no percentage listed have passed laws effectively outlawing predatory payday lending, usually by banning interest rates over a particular level. Calculations are based on a $300 loan. Image adapted from work by Spitfire19, <a class="external" href="https://creativecommons.org/licenses/by/1.0" target="_blank">CC BY 1.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-solving-for-change-2-2-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-solving-for-change-2-2-2-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/1.0</code></div></details>, via Wikimedia Commons. The adapted image is by Mark Branson <a class="external" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-solving-for-change-2-2-2-4"><summary class="ptx-footnote__number" title="Footnote 1.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-solving-for-change-2-2-2-4"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-nc/4.0/</code></div></details>. Data from <a href="payday-loans.html#biblio-crl-payday-rates" class="xref" data-knowl="./knowl/xref/biblio-crl-payday-rates.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.14: Map of U.S. Payday Interest Rates.">[1.2.11.1.14]</a>. <a href="payday-loans.html#image-descriptions-payday-rates" class="xref" data-knowl="./knowl/xref/image-descriptions-payday-rates.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 2">Image Description 2</a>.</figcaption></figure> <div class="para" id="payday-loans-solving-for-change-2-3">All of these rates are unfair and predatory, but some of them are appalling.  In Texas, payday lenders charge up to 664% interest on a $300 loan - that means that over the course of a year, if you borrow $300, you end up paying back</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/biblio-crl-payday-rates.html ./knowl/xref/image-descriptions-payday-rates.html">
+\begin{equation*}
+A = 300 + 300*(6.64)*(1) = \$2,292
+\end{equation*}
+</div>
+<div class="para" id="payday-loans-solving-for-change-2-5">That’s $1,992 in interest on a $300 loan - about $75 every two weeks.  Payday lenders tend to break their loans down into smaller amounts in order to make it seem like less.  Rather than saying $1,992 in interest every year, or even $75 every two weeks on a $300 loan, they would say, "Our fee is $25 for every $100 you borrow, paid back after two weeks."  If that 2 weeks ends, and you can’t re-pay the loan...another $25 for every $100 is charged.  For a borrower struggling to make ends meet, the fees add up like clockwork.</div> <div class="para" id="payday-loans-solving-for-change-2-6">Lenders make many arguments about why they should be able to charge these rates.  Sometimes they say that because people are willing to pay their rates, they should be able to charge them - if it were too much, no one would pay them.  They say that they have to charge such high interest rates because the risk of default - a borrower not paying back their loan - is so high.  And they make the argument that if they didn’t lend money to these people, no one else would.</div> <div class="para" id="payday-loans-solving-for-change-2-7">All of these arguments have some merit, and if we want to fight predatory lending, we need to learn to make counter-arguments.  This is where our newly learned mathematical skills come into play.</div></section><section class="subsection" id="payday-loans-solving-for-change-3"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.1</span><span class="space"> </span><span class="title">If people are willing to pay...</span>
+</h4>
+<div class="para" id="payday-loans-solving-for-change-3-2">The first argument for payday lending says, basically, that if people are willing to pay for a payday loan, then it should be legal to offer them.  This is a free market argument - essentially saying that if the fees were too much, the market wouldn’t support them.</div>
+<div class="para" id="payday-loans-solving-for-change-3-3">There is definitely something to this argument - in Texas, for example, in 2021, there is no cap on the interest that can be charged for a payday loan, but as we saw above, the average rate is 664%.  This is essentially letting the market choose the rate - lenders have stopped at this point because no one will pay rates higher.</div>
+<div class="para" id="payday-loans-solving-for-change-3-4">The people who borrow loans at these ultra-high interest rates, though, don’t do it because they have plenty of money to throw around.  They do it because they have no other choice.  We can see this by looking at the correlation between the number of payday lenders and where people live.</div>
+<div class="para" id="payday-loans-solving-for-change-3-5">
+<a href="payday-loans.html#table-alabama-lenders" class="xref" data-knowl="./knowl/xref/table-alabama-lenders.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.2.2">Table 1.2.2</a> shows data, taken from the 2012 American Community Survey (part of the Census) on the 20 largest counties in Alabama.  For each, we have the number of 522390 establishments (a category which includes payday lenders and related businesses which provide financial services outside of the traditional banking sector), the percentage of the population which is white, the percentage of the population which is Black, and the median household income.</div>
+<div class="para" id="payday-loans-solving-for-change-3-6"><figure class="table table-like" id="table-alabama-lenders"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">County</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Number of Payday Lenders</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Percent White</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Percent Black</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Median Household Income</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Baldwin County</td>
+<td class="r m b0 r0 l0 t0 lines">16</td>
+<td class="r m b0 r0 l0 t0 lines">86.3</td>
+<td class="r m b0 r0 l0 t0 lines">8.8</td>
+<td class="r m b0 r0 l0 t0 lines">48378</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Calhoun County</td>
+<td class="r m b0 r0 l0 t0 lines">15</td>
+<td class="r m b0 r0 l0 t0 lines">75.6</td>
+<td class="r m b0 r0 l0 t0 lines">21.4</td>
+<td class="r m b0 r0 l0 t0 lines">39169</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Cullman County</td>
+<td class="r m b0 r0 l0 t0 lines">6</td>
+<td class="r m b0 r0 l0 t0 lines">96.4</td>
+<td class="r m b0 r0 l0 t0 lines">1.1</td>
+<td class="r m b0 r0 l0 t0 lines">37287</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">DeKalb County</td>
+<td class="r m b0 r0 l0 t0 lines">6</td>
+<td class="r m b0 r0 l0 t0 lines">94</td>
+<td class="r m b0 r0 l0 t0 lines">0.8</td>
+<td class="r m b0 r0 l0 t0 lines">38445</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Elmore County</td>
+<td class="r m b0 r0 l0 t0 lines">10</td>
+<td class="r m b0 r0 l0 t0 lines">75.9</td>
+<td class="r m b0 r0 l0 t0 lines">20.9</td>
+<td class="r m b0 r0 l0 t0 lines">53328</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Etowah County</td>
+<td class="r m b0 r0 l0 t0 lines">10</td>
+<td class="r m b0 r0 l0 t0 lines">81.3</td>
+<td class="r m b0 r0 l0 t0 lines">15</td>
+<td class="r m b0 r0 l0 t0 lines">34264</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Houston County</td>
+<td class="r m b0 r0 l0 t0 lines">14</td>
+<td class="r m b0 r0 l0 t0 lines">70.2</td>
+<td class="r m b0 r0 l0 t0 lines">26.5</td>
+<td class="r m b0 r0 l0 t0 lines">40409</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Jefferson County</td>
+<td class="r m b0 r0 l0 t0 lines">82</td>
+<td class="r m b0 r0 l0 t0 lines">53.2</td>
+<td class="r m b0 r0 l0 t0 lines">42.6</td>
+<td class="r m b0 r0 l0 t0 lines">43959</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Lauderdale County</td>
+<td class="r m b0 r0 l0 t0 lines">9</td>
+<td class="r m b0 r0 l0 t0 lines">87.2</td>
+<td class="r m b0 r0 l0 t0 lines">10</td>
+<td class="r m b0 r0 l0 t0 lines">41908</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Lee County</td>
+<td class="r m b0 r0 l0 t0 lines">14</td>
+<td class="r m b0 r0 l0 t0 lines">70.2</td>
+<td class="r m b0 r0 l0 t0 lines">22.8</td>
+<td class="r m b0 r0 l0 t0 lines">45043</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Limestone County</td>
+<td class="r m b0 r0 l0 t0 lines">5</td>
+<td class="r m b0 r0 l0 t0 lines">80.7</td>
+<td class="r m b0 r0 l0 t0 lines">12.5</td>
+<td class="r m b0 r0 l0 t0 lines">47999</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Madison County</td>
+<td class="r m b0 r0 l0 t0 lines">23</td>
+<td class="r m b0 r0 l0 t0 lines">69.2</td>
+<td class="r m b0 r0 l0 t0 lines">24.5</td>
+<td class="r m b0 r0 l0 t0 lines">56839</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Marshall County</td>
+<td class="r m b0 r0 l0 t0 lines">9</td>
+<td class="r m b0 r0 l0 t0 lines">90.6</td>
+<td class="r m b0 r0 l0 t0 lines">2.1</td>
+<td class="r m b0 r0 l0 t0 lines">36197</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Mobile County</td>
+<td class="r m b0 r0 l0 t0 lines">51</td>
+<td class="r m b0 r0 l0 t0 lines">60.6</td>
+<td class="r m b0 r0 l0 t0 lines">35.1</td>
+<td class="r m b0 r0 l0 t0 lines">39691</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Montgomery County</td>
+<td class="r m b0 r0 l0 t0 lines">33</td>
+<td class="r m b0 r0 l0 t0 lines">39.6</td>
+<td class="r m b0 r0 l0 t0 lines">55.3</td>
+<td class="r m b0 r0 l0 t0 lines">41807</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Morgan County</td>
+<td class="r m b0 r0 l0 t0 lines">9</td>
+<td class="r m b0 r0 l0 t0 lines">82.2</td>
+<td class="r m b0 r0 l0 t0 lines">11.8</td>
+<td class="r m b0 r0 l0 t0 lines">45051</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">St. Clair County</td>
+<td class="r m b0 r0 l0 t0 lines">8</td>
+<td class="r m b0 r0 l0 t0 lines">87.7</td>
+<td class="r m b0 r0 l0 t0 lines">9.2</td>
+<td class="r m b0 r0 l0 t0 lines">51859</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Shelby County</td>
+<td class="r m b0 r0 l0 t0 lines">15</td>
+<td class="r m b0 r0 l0 t0 lines">81.1</td>
+<td class="r m b0 r0 l0 t0 lines">11.2</td>
+<td class="r m b0 r0 l0 t0 lines">65728</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Talladega County</td>
+<td class="r m b0 r0 l0 t0 lines">9</td>
+<td class="r m b0 r0 l0 t0 lines">64.2</td>
+<td class="r m b0 r0 l0 t0 lines">34</td>
+<td class="r m b0 r0 l0 t0 lines">31547</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Tuscaloosa County</td>
+<td class="r m b0 r0 l0 t0 lines">17</td>
+<td class="r m b0 r0 l0 t0 lines">67</td>
+<td class="r m b0 r0 l0 t0 lines">30.4</td>
+<td class="r m b0 r0 l0 t0 lines">41139</td>
+</tr>
+</table></div></figure></div>
+<div class="para" id="payday-loans-solving-for-change-3-7">We can look at the correlations between these different data sets.  For example, the R code below calculates the correlation between the number of payday lenders and the white population of a county, which is -0.68.</div>
+<div id="payday-loans-solving-for-change-3-8" class="ptx-sagecell sagecell-r"><script type="text/x-sage">lenders <- c(16, 15, 6, 6, 10, 10, 14, 82, 9, 14, 5, 23, 9, 51, 33, 9, 8, 15, 9, 17)
+percent.white <- c(86.3, 75.6, 96.4, 94, 75.9, 81.3, 70.2, 53.2, 87.2, 70.2, 80.7, 69.2, 90.6, 60.6, 39.6, 82.2, 87.7, 81.1, 64.2, 67)
+cor(lenders,percent.white)
+</script></div>
+<div class="para" id="payday-loans-solving-for-change-3-9">This means that there is a negative correlation between the percentage of a county which is white and the number of payday lenders - that is, the more white people live in a county, the fewer payday lenders will you find.  Because Alabama is largely a biracial state (with non-white and non-Black minority populations making up a very small percentage of the population), we see a similar (but reversed) correlation between Black population and payday lenders of 0.67 - so more Black people in a county corresponds to more payday lenders. The R code to calculate that correlation is next.</div>
+<div id="payday-loans-solving-for-change-3-10" class="ptx-sagecell sagecell-r"><script type="text/x-sage">lenders <- c(16, 15, 6, 6, 10, 10, 14, 82, 9, 14, 5, 23, 9, 51, 33, 9, 8, 15, 9, 17)
+percent.black <- c(8.8, 21.4, 1.1, 0.8, 20.9, 15, 26.5, 42.6, 10, 22.8, 12.5, 24.5, 2.1, 35.1, 55.3, 11.8, 9.2, 11.2, 34, 30.4)
+cor(lenders,percent.black)
+</script></div>
+<div class="para" id="payday-loans-solving-for-change-3-11">When we see a correlation like this, as we discussed before, we need to remember that it’s not proof of a cause - just evidence.  One thing we should always be thinking about is the possibility of <em class="emphasis">confounding</em>.  Confounding is when another factor we’re not thinking about causes a change in our data.  For example, here, poverty could be a confounding factor.  Because of the deep legacy of racial inequality in the United States, Black people are more likely to live in poverty.  Could the correlation between counties with higher Black populations and payday lenders actually be because those counties are poorer?  Let’s look and see if there is a correlation between median income and the number of payday lenders.</div>
+<div id="payday-loans-solving-for-change-3-12" class="ptx-sagecell sagecell-r"><script type="text/x-sage">lenders <- c(16, 15, 6, 6, 10, 10, 14, 82, 9, 14, 5, 23, 9, 51, 33, 9, 8, 15, 9, 17)
+median.income <- c(48378, 39169, 37287, 38445, 53328, 34264, 40409, 43959, 41908, 45043, 47999, 56839, 36197, 39691, 41807, 45051, 51859, 65728, 31547, 41139)
+cor(lenders,median.income)
+</script></div>
+<div class="para" id="payday-loans-solving-for-change-3-13">The correlation here is 0.02, extremely close to 0.  Remember that a correlation of 0 means that there is no relationship between the two data sets - that when one increases, the other is equally likely to increase or decrease.  So median income doesn’t predict the number of payday lenders nearly as well as race.</div>
+<div class="para" id="payday-loans-solving-for-change-3-14">In the exercises, we’ll consider another possible confounding factor - population.  Is it possible that the counties with larger Black populations just have more people, and thus more payday lenders?</div></section><section class="subsection" id="payday-loans-solving-for-change-4"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.2</span><span class="space"> </span><span class="title">We have to charge those rates, because of the risk!</span>
+</h4>
+<div class="para" id="payday-loans-solving-for-change-4-2">The second argument made for why payday loans are "fair" is that the lenders are taking a large risk by making the loans - so they should be entitled to charge high interest rates. One question here - which we won’t focus on - is whether it is fair to charge interest at all, or if our society should have a more effective way of providing capital to those who lack it. <a class="external" href="https://www.kiva.org/" target="_blank">Kiva</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-solving-for-change-4-2-2"><summary class="ptx-footnote__number" title="Footnote 1.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-solving-for-change-4-2-2"><code class="code-inline tex2jax_ignore">www.kiva.org/</code></div></details> is a non-profit organization that provides loans without interest worldwide, for example.  But even working within the existing framework of capitalism, where any money borrowed must be repaid with interest, we can ask the question of what level of interest is fair.</div>
+<div class="para" id="payday-loans-solving-for-change-4-3">Let’s look at how much money payday lenders are making on loans, through the lens of expected value.  In 2015, the Center for Responsible Lending (CRL) found that 46% of all payday loan borrowers <em class="emphasis">defaulted</em> on their loans within two years <a href="payday-loans.html#biblio-crl-defaults" class="xref" data-knowl="./knowl/xref/biblio-crl-defaults.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.16: Payday Mayday:Visible and Invisible Payday Lending Defaults">[1.2.11.1.16]</a>.  A default on a loan occurs when the lender is unable to meet the terms of the loan. While this doesn’t necessarily mean that they didn’t pay the loan back (in fact, the CRL found that 66% of those defaulting eventually paid their loans back in full, plus any fees that they would have paid for defaulting, like late fees), it does mean that the lender is losing some money on the investment.  The same study found that 20% of loans are <em class="emphasis">charged off</em> within two years, meaning that the lender gives up on collecting the debt. Again, this doesn’t mean they lose all of their money, since the loans are then usually sold to a debt collector who tries to collect some or all of the money, but they do lose much of their investment in this case.</div>
+<div class="para" id="payday-loans-solving-for-change-4-4">Obviously, these situations are very complicated, and there are a lot of possible results, so as we did before, we’ll consider a simplified version.</div>
+<div class="para" id="payday-loans-solving-for-change-4-5">Let’s assume that 20% of the time, the lender loses everything (the loan is charged off).  26% of the time (in the other defaults), they get paid back the full value of the loan, plus the interest, plus late fees.  In the remaining 54% of cases, the lender pays back the loan in full.</div>
+<div class="para" id="payday-loans-solving-for-change-4-6">In a 2014 report, the Consumer Financial Protection Bureau (CFPB) found that the median payday loan sequence is repaid after one month <a href="payday-loans.html#biblio-cfpb-payday-lending-report" class="xref" data-knowl="./knowl/xref/biblio-cfpb-payday-lending-report.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.17: CFPB Data Point: Payday Lending">[1.2.11.1.17]</a>.  So in our scenario above, there are 3 possibilities - 20% of the time, the lender loses everything; 26% of the time, they get back the loan, plus the interest and late fees; and 54% of the time they get their loan back plus interest.</div>
+<div class="para" id="payday-loans-solving-for-change-4-7">Let’s say someone borrows $300 for one month in California at a 460% interest rate.  The late fee for a defaulting lender is $25. How much money should the payday lender expect to make off of them?</div>
+<div class="para logical" id="payday-loans-solving-for-change-4-8">
+<div class="para">First we need to calculate the interest paid, using the simple interest formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 300 + 300*4.60*\frac{1}{12} = \$415
+\end{equation*}
+</div>
+<div class="para">The borrower ends up paying $415 total, or $115 in interest.</div>
+</div>
+<div class="para logical" id="payday-loans-solving-for-change-4-9">
+<div class="para">Now we can calculate expected value.  We take each probability and multiply it times the amount that the lender earns (or a negative value, if they lose money).  Then we add them up.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.20*(-300) + 0.26*(115+25) + 0.54*(115) = \$38.50
+\end{equation*}
+</div>
+<div class="para">On average, the lender earns $38.50 on the $300 loan.</div>
+</div>
+<div class="para" id="payday-loans-solving-for-change-4-10">Of course, many borrowers end up renewing their loans for much more than a month.  Unlike a borrower who pays back their loan quickly, who may just have a temporary emergency need for money, these borrowers struggle to ever pay back their loan, racking up more fees each time they renew the loan.</div>
+<div class="para logical" id="payday-loans-solving-for-change-4-11">
+<div class="para">What if we look at the exact same scenario, but the borrower borrows the money for a year?  Then they will pay back a total of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 300 + 300*4.60*1 = \$1680
+\end{equation*}
+</div>
+<div class="para">The borrower ends up paying $1,680 total, so $1,380 in interest.  If they default on the loan, they also end up paying late fee (possibly more than one, but let’s assume just one).  We can calculate the expected value for the payday lender:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.20*(-300) + 0.26*(1380+25) + 0.54*(1380) = \$1050.50
+\end{equation*}
+</div>
+<div class="para">For every borrower that pays their loan back after a year of fees, on average, the lender can expect to earn $1050.50!  This illustrates the fundamental mechanic of payday lending - the lenders make more money if they lend to borrowers who can just barely afford to pay the loan back.  They have a vested interest in lending to people who are struggling to get by instead of those who are dealing with an unexpected emergency.</div>
+</div></section><section class="subsection" id="payday-loans-solving-for-change-5"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.3</span><span class="space"> </span><span class="title">If we don’t lend to them, who will?</span>
+</h4>
+<div class="para" id="payday-loans-solving-for-change-5-2">This point, of all those made, is the most salient.  Payday lenders exist because for many people with poor credit, there are no other options.  If a borrower has something of value to pawn, they could use a pawn broker - but for people struggling to get by, things of value may be too precious to pawn (the computer that a student uses for school; heirloom jewelry; the car used to get to work).</div>
+<div class="para" id="payday-loans-solving-for-change-5-3">However, as compelling as this argument might be, it turns out to be false.  Many states have banned payday lending, usually by setting a cap of 36% on annual interest rates.  While this cap may seem high when compared to interest rates on credit cards and other types of loans, it is generally low enough to make payday lending untenable.  In 2017, the Center for Responsible Lending studied states which have passed these kinds of bans, and found that banning payday loans did not significantly impact borrowers’ access to credit <a href="payday-loans.html#biblio-shark-free-waters" class="xref" data-knowl="./knowl/xref/biblio-shark-free-waters.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1.2.11.1.18: Shark‐Free Waters: States are Better Off without Payday Lending.">[1.2.11.1.18]</a>. Borrowers who would otherwise have used a payday loan, had they been legal, turned to products such as lines of credit, installment loans, loans from religious institutions, and payment plans with creditors.  Because of the high interest rates and predatory fees, researchers found that taking out payday loans actually made consumers more likely to have negative financial outcomes, like declaring bankruptcy.</div>
+<div class="para" id="payday-loans-solving-for-change-5-4">In the absence of payday lenders, financial institutions like credit unions can fill the gap.  Many credit unions, which are non-profits, offer payday alternative loans to their members.  These loans function much like payday loans, but with interest rates that are much more reasonable.  Removing bad actors like payday lenders creates more space for financial services like these to be successul in our communities.</div></section><section class="subsection" id="payday-loans-solving-for-change-6"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.4</span><span class="space"> </span><span class="title">What Can We Do?</span>
+</h4>
+<div class="para" id="payday-loans-solving-for-change-6-2">The payday lending industry has deep pockets and strong connections to maany of the powerful people in this country.</div></section></section><section class="reading-questions" id="payday-loan-reflection"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="space"> </span><span class="title">Reading Questions</span>
+</h3>
+<article class="exercise exercise-like" id="payday-loan-reflection-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="payday-loan-reflection-1-1">Do some research on payday lending laws in your state.  Is payday lending legal? Are there laws restricting what interest rates that they can charge?</div></article><article class="exercise exercise-like" id="payday-loan-reflection-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="payday-loan-reflection-2-1">One argument that people make about payday lending is that it offers a necessary service to people who cannot secure loans in other ways.  What are some other ways that people could borrow money that aren’t as predatory?</div></article><article class="exercise exercise-like" id="payday-loan-reflection-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="payday-loan-reflection-3-1">One alternative to payday loans, originally popularized in India, is the microloan - low risk, low interest loans made to entrepreneurs with specific plans on how they plan to use the money.  Do some research on the microloan industry.  How do microloans differ from payday loans? Could they potentially be an alternative to payday loans in the United States?</div></article><article class="exercise exercise-like" id="payday-loan-reflection-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="payday-loan-reflection-4-1">What action can we take to help rein in the predatory lending industry?</div></article></section><section class="exercises" id="payday-loans-exercises"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="payday-loans-exercises-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="payday-loans-exercises-1-1">A payday lender charges an annual percentage rate of 350% (simple interest).  If you borrow $200 for two weeks, how much will you have to pay back? How much will you have to pay back if you renew the loan three times (for a total of 8 weeks)?</div></article><article class="exercise exercise-like" id="payday-loans-exercises-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="payday-loans-exercises-2-1">You borrow $500 from a payday lender for 2 weeks, and they charge you a fee of $50 when you repay the loan.  What is the equivalent annual percentage rate?  How much interest would you have paid if you borrowed the money on a credit card which charged 18% instead?</div></article><article class="exercise exercise-like" id="payday-loans-exercises-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="payday-loans-exercises-3-1">The file <a class="external" href="Data_Files/Alabama_Payday.csv" target="_blank">Alabama_Payday.csv</a><details class="ptx-footnote" aria-live="polite" id="payday-loans-exercises-3-1-2"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="payday-loans-exercises-3-1-2"><code class="code-inline tex2jax_ignore">Data_Files/Alabama_Payday.csv</code></div></details> contains the data we looked at in <a href="payday-loans.html#payday-loans-solving-for-change" class="internal" title="Section 1.2.8: Solving for Change">Section 1.2.8</a>, but with two more columns - the population of each county and the number of payday lenders per 100,000 people in each county. In the chapter, we discussed the possibility that our correlation between payday lenders and larger Black populations might actually be a correlation between larger counties and larger Black populations, since we would expect larger counties to have more payday lenders.  Computing a figure per 100,000 people in an area is a common way to compare statistics in areas of differing populations.</div>
+<div class="para" id="payday-loans-exercises-3-2">Calculate the correlation to see if larger counties do have more payday lenders.  Then calculate the correlation between the number of payday lenders per 100,000 people and the percentage of each race in that county to see if there is still a correlation after we adjust for population.</div></article></section><section class="section" id="payday-loans-references"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="space"> </span><span class="title">References</span>
+</h3>
+<section class="subsection" id="payday-loans-references-2"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.11.1</span><span class="space"> </span><span class="title">Bibliography</span>
+</h4>
+<article class="bib" id="biblio-fair-lending"><div class="bibitem">[1]</div>
+<div class="bibentry"> <a class="external" href="https://www.fdic.gov/regulations/compliance/manual/4/iv-1.1.pdf" target="_blank">https://www.fdic.gov/regulations/compliance/manual/4/iv-1.1.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-fair-lending-3"><summary class="ptx-footnote__number" title="Footnote 1.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="biblio-fair-lending-3"><code class="code-inline tex2jax_ignore">www.fdic.gov/regulations/compliance/manual/4/iv-1.1.pdf</code></div></details>, Accessed 06/06/19.</div></article><article class="bib" id="biblio-payday-loan-cfpb"><div class="bibitem">[2]</div>
+<div class="bibentry">
+<a class="external" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/" target="_blank">https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/</a><details class="ptx-footnote" aria-live="polite" id="biblio-payday-loan-cfpb-3"><summary class="ptx-footnote__number" title="Footnote 1.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="biblio-payday-loan-cfpb-3"><code class="code-inline tex2jax_ignore">www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/</code></div></details>, Accessed 09/04/20.</div></article><article class="bib" id="biblio-public-accountability-initiative"><div class="bibitem">[3]</div>
+<div class="bibentry">Connor, Kevin; Skomarovsky, Matthew <a class="external" href="" target="_blank">https://public-accountability.org/wp-content/uploads/2011/09/payday-final-091410.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-public-accountability-initiative-3"><summary class="ptx-footnote__number" title="Footnote 1.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="biblio-public-accountability-initiative-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-ibis"><div class="bibitem">[4]</div>
+<div class="bibentry">
+<a class="external" href="" target="_blank">https://www.ibisworld.com/industry-statistics/market-size/check-cashing-payday-loan-services-united-states/</a><details class="ptx-footnote" aria-live="polite" id="biblio-ibis-3"><summary class="ptx-footnote__number" title="Footnote 1.2.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="biblio-ibis-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-mortgage-discrimination"><div class="bibitem">[5]</div>
+<div class="bibentry">Brooks, Khristopher <a class="external" href="" target="_blank">https://www.cbsnews.com/news/mortgage-discrimination-black-and-latino-paying-millions-more-in-interest-study-shows/</a><details class="ptx-footnote" aria-live="polite" id="biblio-mortgage-discrimination-3"><summary class="ptx-footnote__number" title="Footnote 1.2.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="biblio-mortgage-discrimination-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-systematic-inequality"><div class="bibitem">[6]</div>
+<div class="bibentry">Hanks, Angela; Solomon, Danyelle; Weller, Christian <a class="external" href="" target="_blank">https://www.americanprogress.org/issues/race/reports/2018/02/21/447051/systematic-inequality/</a><details class="ptx-footnote" aria-live="polite" id="biblio-systematic-inequality-3"><summary class="ptx-footnote__number" title="Footnote 1.2.6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="biblio-systematic-inequality-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-race-and-payday-lending"><div class="bibitem">[7]</div>
+<div class="bibentry">
+<a class="external" href="" target="_blank">https://www.pewtrusts.org/~/media/legacy/uploadedfiles/pcs_assets/2012/pewpaydaylendingreportpdf.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-race-and-payday-lending-2"><summary class="ptx-footnote__number" title="Footnote 1.2.7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="biblio-race-and-payday-lending-2"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-race-and-banking"><div class="bibitem">[8]</div>
+<div class="bibentry">Moise, Imani <a class="external" href="" target="_blank">https://www.reuters.com/article/us-usa-banks-race/african-americans-underserved-by-u-s-banks-study-idUSKCN1V3081</a><details class="ptx-footnote" aria-live="polite" id="biblio-race-and-banking-3"><summary class="ptx-footnote__number" title="Footnote 1.2.8"><sup> 8 </sup></summary><div class="ptx-footnote__contents" id="biblio-race-and-banking-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-payday-lending-in-black-neighborhoods"><div class="bibitem">[9]</div>
+<div class="bibentry">California Department of Business Oversight <a class="external" href="" target="_blank">https://dfpi.ca.gov/wp-content/uploads/sites/337/2019/02/The-Demographics-of-CA-Payday-Lending-A-Zip-Code-Analysis-of-Storefront-Locations.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-payday-lending-in-black-neighborhoods-3"><summary class="ptx-footnote__number" title="Footnote 1.2.9"><sup> 9 </sup></summary><div class="ptx-footnote__contents" id="biblio-payday-lending-in-black-neighborhoods-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-payday-lending-race-survey"><div class="bibitem">[10]</div>
+<div class="bibentry">Williams, Claire <a class="external" href="" target="_blank">https://morningconsult.com/2020/07/23/black-consumers-payday-loan-banking-services/</a><details class="ptx-footnote" aria-live="polite" id="biblio-payday-lending-race-survey-3"><summary class="ptx-footnote__number" title="Footnote 1.2.10"><sup> 10 </sup></summary><div class="ptx-footnote__contents" id="biblio-payday-lending-race-survey-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-not-paying-loan"><div class="bibitem">[11]</div>
+<div class="bibentry">Irby, Latoya <a class="external" href="" target="_blank">https://www.thebalance.com/what-will-happen-if-i-stop-paying-my-credit-card-960284</a><details class="ptx-footnote" aria-live="polite" id="biblio-not-paying-loan-3"><summary class="ptx-footnote__number" title="Footnote 1.2.11"><sup> 11 </sup></summary><div class="ptx-footnote__contents" id="biblio-not-paying-loan-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-spurious-correlations"><div class="bibitem">[12]</div>
+<div class="bibentry">Vigen, Tyler <a class="external" href="" target="_blank">https://tylervigen.com/view_correlation?id=75</a><details class="ptx-footnote" aria-live="polite" id="biblio-spurious-correlations-3"><summary class="ptx-footnote__number" title="Footnote 1.2.12"><sup> 12 </sup></summary><div class="ptx-footnote__contents" id="biblio-spurious-correlations-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-correlation-comic"><div class="bibitem">[13]</div>
+<div class="bibentry">Munroe, Randall <a class="external" href="" target="_blank">https://xkcd.com/552/</a><details class="ptx-footnote" aria-live="polite" id="biblio-correlation-comic-3"><summary class="ptx-footnote__number" title="Footnote 1.2.13"><sup> 13 </sup></summary><div class="ptx-footnote__contents" id="biblio-correlation-comic-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-crl-payday-rates"><div class="bibitem">[14]</div>
+<div class="bibentry">
+<a class="external" href="" target="_blank">https://www.responsiblelending.org/research-publication/map-us-payday-interest-rates</a><details class="ptx-footnote" aria-live="polite" id="biblio-crl-payday-rates-3"><summary class="ptx-footnote__number" title="Footnote 1.2.14"><sup> 14 </sup></summary><div class="ptx-footnote__contents" id="biblio-crl-payday-rates-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-census"><div class="bibitem">[15]</div>
+<div class="bibentry">
+<a class="external" href="" target="_blank">https://data.census.gov/cedsci/</a><details class="ptx-footnote" aria-live="polite" id="biblio-census-3"><summary class="ptx-footnote__number" title="Footnote 1.2.15"><sup> 15 </sup></summary><div class="ptx-footnote__contents" id="biblio-census-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-crl-defaults"><div class="bibitem">[16]</div>
+<div class="bibentry">Montezemolo, Susanna; Wolff, Sarah <a class="external" href="" target="_blank">https://www.responsiblelending.org/payday-lending/research-analysis/finalpaydaymayday_defaults.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-crl-defaults-3"><summary class="ptx-footnote__number" title="Footnote 1.2.16"><sup> 16 </sup></summary><div class="ptx-footnote__contents" id="biblio-crl-defaults-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-cfpb-payday-lending-report"><div class="bibitem">[17]</div>
+<div class="bibentry">Burke, Kathleen; Lanning, Jonathan; Leary, Jesse; Wang, Jialan. <a class="external" href="" target="_blank">https://files.consumerfinance.gov/f/201403_cfpb_report_payday-lending.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-cfpb-payday-lending-report-3"><summary class="ptx-footnote__number" title="Footnote 1.2.17"><sup> 17 </sup></summary><div class="ptx-footnote__contents" id="biblio-cfpb-payday-lending-report-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article><article class="bib" id="biblio-shark-free-waters"><div class="bibitem">[18]</div>
+<div class="bibentry">Howarth, Robin; Davis, Delvin; Wolff, Sarah  <a class="external" href="" target="_blank">https://www.responsiblelending.org/sites/default/files/nodes/files/research-publication/crl_shark_free_waters_aug2016.pdf</a><details class="ptx-footnote" aria-live="polite" id="biblio-shark-free-waters-3"><summary class="ptx-footnote__number" title="Footnote 1.2.18"><sup> 18 </sup></summary><div class="ptx-footnote__contents" id="biblio-shark-free-waters-3"><code class="code-inline tex2jax_ignore"></code></div></details>
+</div></article></section><section class="subsection" id="payday-loans-references-3"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.11.2</span><span class="space"> </span><span class="title">Image Descriptions</span>
+</h4>
+<ol class="decimal" id="payday-loans-references-3-2">
+<li id="image-description-credit-score"><div class="para" id="p-derived-image-description-credit-score">A bar showing credit scores categorized as Very Bad (300-599), Poor (600-649), Fair (650-699), Good (700-749), Very Good (750-799), and Excellent (800-850).  Only secured loans are available for people with scores in the very bad or poor range.  People with Fair or Good scores should be able to secure credit with good rates, while people with very good or excellent credit receive the best interest rates.</div></li>
+<li id="image-descriptions-payday-rates">A map of the United states with states shaded according to the typical payday loan rate in that state. Only states which allow predatory payday lending are labeled. Typical rates for those states are shown in the table below. <figure class="table table-like" id="image-descriptions-payday-rates-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">State</td>
+<td class="l m b0 r0 l0 t0 lines">Typical Payday Loan APR</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ohio</td>
+<td class="l m b0 r0 l0 t0 lines">138%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Oregon</td>
+<td class="l m b0 r0 l0 t0 lines">154%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Virginia</td>
+<td class="l m b0 r0 l0 t0 lines">173%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">New Mexico</td>
+<td class="l m b0 r0 l0 t0 lines">175%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Minnesota</td>
+<td class="l m b0 r0 l0 t0 lines">200%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Oklahoma</td>
+<td class="l m b0 r0 l0 t0 lines">203%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Maine</td>
+<td class="l m b0 r0 l0 t0 lines">217%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Rhode Island</td>
+<td class="l m b0 r0 l0 t0 lines">261%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Wyoming</td>
+<td class="l m b0 r0 l0 t0 lines">261%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Florida</td>
+<td class="l m b0 r0 l0 t0 lines">304%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Iowa</td>
+<td class="l m b0 r0 l0 t0 lines">336%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Michigan</td>
+<td class="l m b0 r0 l0 t0 lines">370%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Indiana</td>
+<td class="l m b0 r0 l0 t0 lines">382%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Delaware</td>
+<td class="l m b0 r0 l0 t0 lines">391%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Kansas</td>
+<td class="l m b0 r0 l0 t0 lines">391%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Washington</td>
+<td class="l m b0 r0 l0 t0 lines">391%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">South Carolina</td>
+<td class="l m b0 r0 l0 t0 lines">395%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Alaska</td>
+<td class="l m b0 r0 l0 t0 lines">435%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Alabama</td>
+<td class="l m b0 r0 l0 t0 lines">456%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">California</td>
+<td class="l m b0 r0 l0 t0 lines">460%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Hawaii</td>
+<td class="l m b0 r0 l0 t0 lines">460%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Tennessee</td>
+<td class="l m b0 r0 l0 t0 lines">460%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Kentucky</td>
+<td class="l m b0 r0 l0 t0 lines">469%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Louisiana</td>
+<td class="l m b0 r0 l0 t0 lines">478%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Wisconsin</td>
+<td class="l m b0 r0 l0 t0 lines">516%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Mississippi</td>
+<td class="l m b0 r0 l0 t0 lines">521%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">North Dakota</td>
+<td class="l m b0 r0 l0 t0 lines">526%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Missouri</td>
+<td class="l m b0 r0 l0 t0 lines">527%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Idaho</td>
+<td class="l m b0 r0 l0 t0 lines">652%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Nevada</td>
+<td class="l m b0 r0 l0 t0 lines">652%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Utah</td>
+<td class="l m b0 r0 l0 t0 lines">652%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Texas</td>
+<td class="l m b0 r0 l0 t0 lines">664%</td>
+</tr>
+</table></div></figure>
+</li>
+</ol></section></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-section-name.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
